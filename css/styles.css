@@ -1,9 +1,77 @@
 
 
+/*
+  Colors
+  electric blue: rgba(45,100,253,1)
+ */
+
+ /*
+  FONTS
+  font-family: 'Comfortaa', cursive;
+ */
+
 body {
-  background-color: lightgrey;
+  background-color: rgba(250,250,250,1);
+  font-family: 'Comfortaa', cursive;
 }
 
-h1 {
+h3  {
+  text-align: center;
+}
+
+.canvas-bar {
+  margin: 0px auto 0px auto;
+  /* outline-color: green;
+  outline-style: solid;
+  outline-width: 1px; */
+}
+
+.canvas-container {
+  margin: 0px auto 0px auto;
+  text-align: center;
+  width: 202px;
+  height: 202px;
+  outline-color: blue;
+  outline-style: solid;
+  outline-width: 1px;
+}
+
+#canvas-logo {
+  /* outline-color: red;
+  outline-width: 1px;
+  outline-style: solid; */
+}
+
+.construction-bar {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.grid-container {
+  /* outline-color: blue;
+  outline-style: solid;
+  outline-width: 1px; */
+}
+
+.grid {
+  margin: 0px auto 0px auto;
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+
+  outline-color: green;
+  outline-style: solid;
+  outline-width: 1px;
+}
+
+.grid-item {
+  outline-color: red;
+  outline-style: solid;
+  outline-width: 1px;
+}
+
+footer {
   text-align: center;
 }
