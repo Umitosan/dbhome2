@@ -1,9 +1,98 @@
 /* jshint esversion: 6 */
 
+var canvasLogo;
+var ctx;
+var myLogo;
 
+var colors = {
+  hotpink: 'rgb(195,32,104)',
+  green: 'rgb(26,159,99)',
+  yellow: 'rgb(230,230,38)'
+};
 
+function Logo() {
+  this.color1 = colors.hotpink;
+  this.color2 = colors.green;
+  this.color3 = colors.yellow;
+
+  this.draw = function() {
+    ctx.fillStyle = this.color1;
+    ctx.strokeStyle =  this.color1;
+
+    ctx.beginPath();
+    ctx.lineWidth = 2;
+    ctx.moveTo(10,10);
+    ctx.lineTo(10,110);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(10,60,50,-(Math.PI/2),(Math.PI/2));
+    ctx.stroke();
+    ctx.fill();
+
+    ctx.strokeStyle = this.color2;
+    ctx.fillStyle = this.color2;
+
+    ctx.beginPath();
+    ctx.lineWidth = 2;
+    ctx.moveTo(62,55);
+    ctx.lineTo(62,110);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(62,75,20,-(Math.PI/2),(Math.PI/2));
+    ctx.stroke();
+    ctx.fill();
+
+    ctx.strokeStyle = this.color3;
+    ctx.fillStyle = this.color3;
+
+    ctx.beginPath();
+    ctx.lineWidth = 2;
+    ctx.moveTo(84,72);
+    ctx.lineTo(84,110);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(84,82,9,-(Math.PI/2),(Math.PI/2));
+    ctx.stroke();
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(84,100,9,-(Math.PI/2),(Math.PI/2));
+    ctx.stroke();
+    ctx.fill();
+  };
+
+  this.update = function() {
+    let c1 = this.color1;
+    let c2 = this.color2;
+    let c3 = this.color3;
+    this.color1 = c3;
+    this.color2 = c1;
+    this.color3 = c2;
+  };
+
+}
+
+function clearCanvas() {
+  ctx.clearRect(-1, -1, canvasLogo.width+1, canvasLogo.height+1);
+}
 
 // FRONT END
 $(document).ready( function() {
+  canvasLogo = document.getElementById('canvas-logo');
+  ctx = canvasLogo.getContext('2d');
+  myLogo = new Logo();
+  myLogo.draw();
+
+  setInterval(function(){
+    clearCanvas();
+    myLogo.draw();
+    myLogo.update();
+  }, 800);
+
+  $('.grid-item').each(function(d) {
+  });
 
 });

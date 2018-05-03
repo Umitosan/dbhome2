@@ -11,7 +11,7 @@
  */
 
 body {
-  background-color: rgba(250,250,250,1);
+  background-color: rgba(150,150,150,1);
   font-family: 'Comfortaa', cursive;
 }
 
@@ -27,13 +27,14 @@ h3  {
 }
 
 .canvas-container {
+  background-color: rgba(130,130,130,1);
   margin: 0px auto 0px auto;
   text-align: center;
-  width: 202px;
-  height: 202px;
-  outline-color: blue;
+  width: 140px;
+  height: 130px;
+  /* outline-color: green;
   outline-style: solid;
-  outline-width: 1px;
+  outline-width: 1px; */
 }
 
 #canvas-logo {
@@ -54,22 +55,23 @@ h3  {
 }
 
 .grid {
+  background-color: rgba(130,130,130,1);
   margin: 0px auto 0px auto;
-  width: 300px;
-  height: 300px;
+  width: 480px;
+  height: 480px;
   display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 160px 160px 160px;
+  grid-template-rows: 160px 160px 160px;
 
-  outline-color: green;
+  /* outline-color: green;
   outline-style: solid;
-  outline-width: 1px;
+  outline-width: 1px; */
 }
 
 .grid-item {
-  outline-color: red;
+  /* outline-color: green;
   outline-style: solid;
-  outline-width: 1px;
+  outline-width: 1px; */
 }
 
 footer {

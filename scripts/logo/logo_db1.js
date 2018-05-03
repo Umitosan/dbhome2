@@ -1,3 +1,10 @@
+/*
+  pallete 1
+  hot pink: #C32068  rgb(195,32,104)
+  green:    #1A9F63  rgb(26,159,99)
+  yellow:   #E6E626
+*/
+
 ctx.fillStyle = 'blue';
 ctx.strokeStyle = 'blue';
 
