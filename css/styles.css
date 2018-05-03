@@ -27,7 +27,7 @@ h3  {
 }
 
 .canvas-container {
-  background-color: rgba(130,130,130,1);
+  /* background-color: rgba(130,130,130,1); */
   margin: 0px auto 0px auto;
   text-align: center;
   width: 140px;
@@ -43,8 +43,13 @@ h3  {
   outline-style: solid; */
 }
 
+#construct-txt {
+  font-size: 47px;
+}
+
 .construction-bar {
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -75,5 +80,6 @@ h3  {
 }
 
 footer {
+  margin-top: 30px;
   text-align: center;
 }
