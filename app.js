@@ -92,7 +92,15 @@ $(document).ready( function() {
     myLogo.update();
   }, 800);
 
-  $('.grid-item').each(function(d) {
+  $('.grid-item').each( function() {
+    $(this).mouseenter( function() {
+      $(this).css("background-color","yellow");
+      $(this).find('.grid-item-text').text("PROJECT");
+    });
+    $(this).mouseleave( function() {
+      $(this).css("background-color","rgba(150,150,150,1)");
+      $(this).find('.grid-item-text').text("");
+    });
   });
 
 });

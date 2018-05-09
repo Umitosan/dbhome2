@@ -11,6 +11,7 @@
  */
 
 body {
+  margin: 20px 0px 0px 0px;
   background-color: rgba(150,150,150,1);
   font-family: 'Comfortaa', cursive;
 }
@@ -54,32 +55,48 @@ h3  {
 }
 
 .grid-container {
+  background-color: rgba(200,200,200,1);
   /* outline-color: blue;
   outline-style: solid;
   outline-width: 1px; */
 }
 
 .grid {
-  background-color: rgba(130,130,130,1);
+  background-color: rgba(150,150,150,1);
   margin: 0px auto 0px auto;
-  width: 480px;
-  height: 480px;
+  width: 750px;
+  height: 750px;
   display: grid;
-  grid-template-columns: 160px 160px 160px;
-  grid-template-rows: 160px 160px 160px;
-
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 250px 250px 250px;
   /* outline-color: green;
   outline-style: solid;
   outline-width: 1px; */
 }
 
 .grid-item {
+  text-align: center;
+  background-image: url('../images/flower.png');
+  background-size: auto;
+  background-repeat: no-repeat;
   /* outline-color: green;
   outline-style: solid;
   outline-width: 1px; */
 }
 
+.grid-item-text {
+
+}
+
 footer {
   margin-top: 30px;
   text-align: center;
+}
+
+.hr-sm {
+  width: 110px;
+  height: 1px;
+  border-color: green;
+  border-style: solid;
+  background-color: green;
 }
