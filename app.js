@@ -95,7 +95,7 @@ $(document).ready( function() {
 
   $('.grid-item').each( function() {
     $(this).mouseenter( function() {
-      $(this).css("background-color","lightblue");
+      $(this).css("background-color","rgb(173,216,250)");
       $(this).find('.grid-item-text').text("PROJECT");
     });
     $(this).mouseleave( function() {
