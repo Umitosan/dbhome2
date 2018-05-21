@@ -56,6 +56,8 @@ h3  {
 
 .grid-container {
   background-color: rgba(200,200,200,1);
+  padding-top: 40px;
+  padding-bottom: 40px;
   /* outline-color: blue;
   outline-style: solid;
   outline-width: 1px; */
@@ -67,25 +69,33 @@ h3  {
   width: 750px;
   height: 750px;
   display: grid;
-  grid-template-columns: 250px 250px 250px;
-  grid-template-rows: 250px 250px 250px;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(3, 250px);
   /* outline-color: green;
   outline-style: solid;
   outline-width: 1px; */
 }
 
 .grid-item {
+  /* outline-color: red;
+  outline-style: solid;
+  outline-width: 1px; */
+}
+
+.project {
   text-align: center;
+  margin: 10px auto;
+  width: 230px;
+  height: 230px;
   background-image: url('../images/flower.png');
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
-  /* outline-color: green;
+  /* outline-color: blue;
   outline-style: solid;
   outline-width: 1px; */
 }
 
 .grid-item-text {
-
 }
 
 footer {

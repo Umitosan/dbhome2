@@ -7,7 +7,8 @@ var myLogo;
 var colors = {
   hotpink: 'rgb(195,32,104)',
   green: 'rgb(26,159,99)',
-  yellow: 'rgb(230,230,38)'
+  yellow: 'rgb(230,230,38)',
+  lightblue: 'rgb(173,216,230)'
 };
 
 function Logo() {
@@ -94,7 +95,7 @@ $(document).ready( function() {
 
   $('.grid-item').each( function() {
     $(this).mouseenter( function() {
-      $(this).css("background-color","yellow");
+      $(this).css("background-color","lightblue");
       $(this).find('.grid-item-text').text("PROJECT");
     });
     $(this).mouseleave( function() {
