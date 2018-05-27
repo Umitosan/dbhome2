@@ -100,7 +100,7 @@ $(document).ready( function() {
   $('.grid-item').each( function() {
     $(this).mouseenter( function() {
       $(this).css("background-color",colors.darkblue);
-      $(this).find('.grid-item-text').text("PROJECT");
+      $(this).find('.grid-item-text').text("");
     });
     $(this).mouseleave( function() {
       $(this).css("background-color",colors.ltgrey2);

@@ -90,12 +90,11 @@ h3  {
   margin: 10px auto;
   width: 230px;
   height: 230px;
-  outline-color: blue;
-  outline-style: solid;
-  outline-width: 1px;
-
   background-size: cover;
   background-repeat: no-repeat;
+  /* outline-color: blue;
+  outline-style: solid;
+  outline-width: 1px; */
 }
 
 .p1 {
@@ -111,17 +110,20 @@ h3  {
   background-image: url('../images/lil_rogue.png');
 }
 .p5 {
-  background-image: url('../images/lil_rogue.png');
+  background-image: url('../images/space_junk.png');
 }
-/* .p4 {
-  background-image: url('../images/lil_rogue.png');
+.p6 {
+  background-image: url('../images/sort_anim.png');
 }
-.p4 {
-  background-image: url('../images/lil_rogue.png');
+.p7 {
+  background-image: url('../images/anim_test.png');
 }
-.p4 {
-  background-image: url('../images/lil_rogue.png');
-} */
+.p8 {
+  background-image: url('../images/pac_man.png');
+}
+.p9 {
+  background-image: url('../images/qwertys_qwest.png');
+}
 
 .grid-item-text {
 }
