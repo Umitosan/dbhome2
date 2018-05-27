@@ -12,7 +12,7 @@
 
 body {
   margin: 20px 0px 0px 0px;
-  background-color: rgba(150,150,150,1);
+  background-color: rgba(210,210,210,1);
   font-family: 'Comfortaa', cursive;
 }
 
@@ -28,7 +28,6 @@ h3  {
 }
 
 .canvas-container {
-  /* background-color: rgba(130,130,130,1); */
   margin: 0px auto 0px auto;
   text-align: center;
   width: 140px;
@@ -55,7 +54,7 @@ h3  {
 }
 
 .grid-container {
-  background-color: rgba(150,150,150,1);
+  background-color: rgba(210,210,210,1);
   padding-top: 40px;
   padding-bottom: 40px;
   /* outline-color: blue;
@@ -91,13 +90,38 @@ h3  {
   margin: 10px auto;
   width: 230px;
   height: 230px;
-  background-image: url('../images/flower.png');
+  outline-color: blue;
+  outline-style: solid;
+  outline-width: 1px;
+
   background-size: cover;
   background-repeat: no-repeat;
-  /* outline-color: blue;
-  outline-style: solid;
-  outline-width: 1px; */
 }
+
+.p1 {
+  background-image: url('../images/flower.png');
+}
+.p2 {
+  background-image: url('../images/net_viz.png');
+}
+.p3 {
+  background-image: url('../images/uforegon.png');
+}
+.p4 {
+  background-image: url('../images/lil_rogue.png');
+}
+.p5 {
+  background-image: url('../images/lil_rogue.png');
+}
+/* .p4 {
+  background-image: url('../images/lil_rogue.png');
+}
+.p4 {
+  background-image: url('../images/lil_rogue.png');
+}
+.p4 {
+  background-image: url('../images/lil_rogue.png');
+} */
 
 .grid-item-text {
 }

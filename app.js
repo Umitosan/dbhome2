@@ -5,10 +5,14 @@ var ctx;
 var myLogo;
 
 var colors = {
-  hotpink: 'rgb(195,32,104)',
-  green: 'rgb(26,159,99)',
-  yellow: 'rgb(230,230,38)',
-  lightblue: 'rgb(173,216,230)'
+  ltgrey1: 'rgba(150, 150, 150, 1)',
+  ltgrey2: 'rgba(210, 210, 210, 1)',
+  hotpink: 'rgb(195, 32, 104)',
+  green:   'rgb(26, 159, 99)',
+  yellow:  'rgb(230, 230, 38)',
+  lightblue1: 'rgb(173, 216, 230)',
+  lightblue2: 'rgb(173, 216, 250)',
+  darkblue:   'rgb(51, 102, 255)'
 };
 
 function Logo() {
@@ -95,11 +99,11 @@ $(document).ready( function() {
 
   $('.grid-item').each( function() {
     $(this).mouseenter( function() {
-      $(this).css("background-color","rgb(173,216,250)");
+      $(this).css("background-color",colors.darkblue);
       $(this).find('.grid-item-text').text("PROJECT");
     });
     $(this).mouseleave( function() {
-      $(this).css("background-color","rgba(150,150,150,1)");
+      $(this).css("background-color",colors.ltgrey2);
       $(this).find('.grid-item-text').text("");
     });
   });
