@@ -1,0 +1,15 @@
+@keyframes flipH {
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes fadeToBlack {
+  to {
+    width: 110px;
+    height: 1px;
+    border-color: black;
+    border-style: solid;
+    background-color: black;
+  }
+}

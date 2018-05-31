@@ -97,15 +97,28 @@ $(document).ready( function() {
     myLogo.update();
   }, 800);
 
+  // project mouse over events
   $('.grid-item').each( function() {
     $(this).mouseenter( function() {
-      $(this).css("background-color",colors.darkblue);
+      // $(this).css("background-color",colors.darkblue);
+      // $(this).css("background","linear-gradient(green, lightgreen, pink)");
+      $(this).css("background","linear-gradient(blue, white, lightgreen)");
       $(this).find('.grid-item-text').text("");
     });
     $(this).mouseleave( function() {
-      $(this).css("background-color",colors.ltgrey2);
+      // $(this).css("background-color",colors.ltgrey2);
+      $(this).css("background","none");
       $(this).find('.grid-item-text').text("");
     });
+  });
+
+  $('footer').mouseenter( function() {
+      $('#footer-hr').addClass('fade-black');
+      console.log('footer entered');
+  });
+  $('footer').mouseleave( function() {
+      $('#footer-hr').removeClass('fade-black');
+      console.log('footer left');
   });
 
 });
