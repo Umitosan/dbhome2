@@ -63,6 +63,7 @@ h3  {
 }
 
 .grid {
+    overflow: hidden;
   margin: 0px auto 0px auto;
   width: 900px;
   height: 900px;
@@ -88,8 +89,8 @@ h3  {
   border-width: 0px;
   text-align: center;
   margin: 3% auto;
-  width: 280px;
-  height: 280px;
+  width: 94%;
+  height: 94%;
   background-size: cover;
   background-repeat: no-repeat;
   /* outline-color: blue;
@@ -189,6 +190,24 @@ footer {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: alternate;
+}
+.grad-anim1 {
+  animation-name: grads1;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+.grad-anim2 {
+  overflow: hidden;
+  background: linear-gradient(10deg, #16d8a6, #8776f4);
+  animation-name: grads2;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* animation-direction: alternate; */
 }
 
 /*

@@ -102,12 +102,13 @@ $(document).ready( function() {
     $(this).mouseenter( function() {
       // $(this).css("background-color",colors.darkblue);
       // $(this).css("background","linear-gradient(green, lightgreen, pink)");
-      $(this).css("background","linear-gradient(blue, white, lightgreen)");
+      // $(this).css("background","linear-gradient(blue, white, lightgreen)");
+      $(this).addClass('grad-anim2');
       $(this).find('.grid-item-text').text("");
     });
     $(this).mouseleave( function() {
       // $(this).css("background-color",colors.ltgrey2);
-      $(this).css("background","none");
+      $(this).removeClass('grad-anim2');
       $(this).find('.grid-item-text').text("");
     });
   });
