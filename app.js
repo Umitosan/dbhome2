@@ -103,12 +103,14 @@ $(document).ready( function() {
       // $(this).css("background-color",colors.darkblue);
       // $(this).css("background","linear-gradient(green, lightgreen, pink)");
       // $(this).css("background","linear-gradient(blue, white, lightgreen)");
-      $(this).addClass('grad-anim2');
-      $(this).find('.grid-item-text').text("");
+      $(this).addClass('grad1');
+      $(this).find(".project").addClass('opacity-anim1');
+      $(this .project).find('.grid-item-text').text("");
     });
     $(this).mouseleave( function() {
       // $(this).css("background-color",colors.ltgrey2);
-      $(this).removeClass('grad-anim2');
+      $(this).removeClass('grad1');
+      $(this).find(".project").removeClass('opacity-anim1');
       $(this).find('.grid-item-text').text("");
     });
   });
