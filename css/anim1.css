@@ -70,7 +70,7 @@
   /* animation-direction: alternate; */
 }
 
-@keyframes  opac1 {
+@keyframes opac1 {
   from {
     opacity: 1;
   }
@@ -78,14 +78,47 @@
     opacity: 0.5;
   }
 }
-
 .opacity-anim1 {
   animation-name: opac1;
   animation-duration: 0.5s;
   animation-delay: 0s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 4;
   animation-timing-function: linear;
   animation-direction: alternate;
+}
+
+@keyframes opacfadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.opacfadeOut-anim {
+  animation-name: opacfadeOut;
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-direction: normal;
+}
+
+@keyframes opacfadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.opacfadeIn-anim {
+  animation-name: opacfadeIn;
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-direction: normal;
 }
 
 /*

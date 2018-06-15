@@ -115,6 +115,17 @@ $(document).ready( function() {
     });
   });
 
+  // $('.menu').mouseenter( function() {
+  //     $(this).addClass('opacfadeOut-anim');
+  //     console.log('menu fading out');
+  // });
+  // $('.menu').mouseleave( function() {
+  //     $(this).removeClass('opacfadeOut-anim');
+  //     console.log('menu fading in');
+  // });
+
+  // opacfadeOut-anim
+
   $('footer').mouseenter( function() {
       $('#footer-hr').addClass('fade-black');
       console.log('footer entered');
