@@ -115,6 +115,17 @@ $(document).ready( function() {
     });
   });
 
+  $('.scrollable').on('click', function(event) {
+    console.log('scrollable clicked');
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+      event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top
+      }, 1000);
+    }
+  });
+
   // $('.menu').mouseenter( function() {
   //     $(this).addClass('opacfadeOut-anim');
   //     console.log('menu fading out');

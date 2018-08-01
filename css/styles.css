@@ -133,7 +133,7 @@ h3  {
 }
 
 .grid {
-    overflow: hidden;
+  overflow: hidden;
   margin: 0px auto 0px auto;
   width: 900px;
   height: 900px;
@@ -214,31 +214,31 @@ h3  {
   background: linear-gradient(10deg, #16d8a6, #8776f4);
 }
 
-.proj-1-detail {
+.pd1 {
   background-color: darkgrey;
 }
-.proj-2-detail {
+.pd2 {
 
 }
-.proj-3-detail {
+.pd3 {
   background-color: darkgrey;
 }
-.proj-4-detail {
+.pd4 {
 
 }
-.proj-5-detail {
+.pd5 {
   background-color: darkgrey;
 }
-.proj-6-detail {
+.pd6 {
 
 }
-.proj-7-detail {
+.pd7 {
   background-color: darkgrey;
 }
-.proj-8-detail {
+.pd8 {
 
 }
-.proj-9-detail {
+.pd9 {
   background-color: darkgrey;
 }
 
@@ -246,7 +246,7 @@ h3  {
 }
 
 footer {
-  margin-top: 30px;
+  padding-top: 30px;
   text-align: center;
 }
 
