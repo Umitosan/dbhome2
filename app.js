@@ -120,9 +120,13 @@ $(document).ready( function() {
     var target = $(this.getAttribute('href'));
     if( target.length ) {
       event.preventDefault();
-        $('html, body').stop().animate({
-          scrollTop: target.offset().top
-      }, 1000);
+      // console.log('target.offset().top = ', target.offset().top);
+      if (target[0].getAttribute('id') === "top") {
+        // window.scrollTo(0,0);  this version is instant instead of animated
+        $('html, body').stop().animate({ scrollTop: (target.offset().top -120) }, 800); // 120 because of nav bar
+      } else {
+        $('html, body').stop().animate({ scrollTop: (target.offset().top -53) }, 800); // -53 to adjust for margin
+      }
     }
   });
 

@@ -13,8 +13,11 @@
   </head>
   <body>
 
-    <div class="nav-bar scrollable" id="top" href="#footer">
-      <div class="nav-item nav-left logo">
+    <div class="scrollable" id="top">
+
+    </div>
+    <div class="nav-bar">
+      <div class="nav-item nav-left logo scrollable" href="#top">
       </div>
       <div class="nav-item nav-right menu1">
         <div class="menu1-container">
@@ -24,6 +27,7 @@
         </div>
       </div>
     </div>
+
 
     <div class="canvas-bar">
       <div class="canvas-container">
@@ -117,9 +121,27 @@
     </div>
 
     <footer class="scrollable" id="footer">
-      <p>CONTACT</p>
-      <hr id="footer-hr" class="hr-sm">
-      <p>admin@dombrown.net</p>
+      <div class="grid-wrapper">
+
+        <div class="footer-item icon github-container">
+          <a href="https://github.com/Umitosan/">
+            <img id="git-img" border="0" src="images/git-icon.png" alt="github-icon">
+          </a>
+        </div>
+
+        <div class="footer-item contact-container">
+          <p>CONTACT</p>
+          <hr id="footer-hr" class="hr-sm scrollable" href="#top">
+          <p>admin@dombrown.net</p>
+        </div>
+
+        <div class="footer-item icon linkedin-container">
+          <a href="https://www.linkedin.com/in/dominic-brown/">
+            <img id="linkedin-img" border="0" src="images/linkedin-icon.png" alt="github-icon">
+          </a>
+        </div>
+
+      </div>
     </footer>
   </body>
 </html>

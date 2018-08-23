@@ -245,9 +245,18 @@ h3  {
 .grid-item-text {
 }
 
+
+/* ////////////////////////////// */
+/* ////////////////////////////// */
+/* ////////////////////////////// */
 footer {
-  padding-top: 30px;
+  padding-top: 20px;
   text-align: center;
+  padding-bottom: 20px;
+}
+footer img {
+  height: 100px;
+  width: 100px;
 }
 
 .hr-sm {
@@ -256,4 +265,20 @@ footer {
   border-color: green;
   border-style: solid;
   background-color: green;
+}
+
+.footer-item {
+  /* outline-color: blue;
+  outline-style: solid;
+  outline-width: 1px; */
+}
+
+
+
+.grid-wrapper {
+  margin: 0px auto 0px auto;
+  width: 600px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  /* grid-template-rows: 100px 100px 100px; */
 }
