@@ -125,7 +125,7 @@ $(document).ready( function() {
         // window.scrollTo(0,0);  this version is instant instead of animated
         $('html, body').stop().animate({ scrollTop: (target.offset().top -120) }, 800); // 120 because of nav bar
       } else {
-        $('html, body').stop().animate({ scrollTop: (target.offset().top -53) }, 800); // -53 to adjust for margin
+        $('html, body').stop().animate({ scrollTop: (target.offset().top -60) }, 800); // -53 to adjust for margin
       }
     }
   });

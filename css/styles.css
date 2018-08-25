@@ -32,9 +32,6 @@ h3  {
 .nav-item {
   height: 60px;
   width: 70px;
-  /* outline-color: green;
-  outline-width: 1px;
-  outline-style: solid; */
 }
 .nav-left {
   float: left;
@@ -51,18 +48,12 @@ h3  {
 }
 .menu1 {
   margin: 0px auto;
-  /* outline-color: green;
-  outline-width: 1px;
-  outline-style: solid; */
 }
 .menu1-container {
   padding-top: 6px;
   height: 46px;
   width: 46px;
   margin: 5px 10px;
-  /* outline-color: red;
-  outline-style: solid;
-  outline-width: 1px; */
 }
 .menu1-container:hover {
   display: inline-flex;
@@ -92,9 +83,6 @@ h3  {
 
 .canvas-bar {
   margin: 0px auto 0px auto;
-  /* outline-color: green;
-  outline-style: solid;
-  outline-width: 1px; */
 }
 
 .canvas-container {
@@ -102,9 +90,6 @@ h3  {
   text-align: center;
   width: 140px;
   height: 130px;
-  /* outline-color: green;
-  outline-style: solid;
-  outline-width: 1px; */
 }
 
 #canvas-logo {
@@ -172,79 +157,117 @@ h3  {
   padding: 3px;
   height: 95%;
   width:95%;
-  outline-color: blue;
+  /* outline-color: blue;
   outline-style: solid;
-  outline-width: 1px;
+  outline-width: 1px; */
 }
 
-.p1 {
+.p1, .p1-img {
   background-image: url('../images/flower.png');
 }
-.p2 {
+.p2, .p2-img {
   background-image: url('../images/net_viz.png');
 }
-.p3 {
+.p3, .p3-img {
   background-image: url('../images/uforegon.png');
 }
-.p4 {
+.p4, .p4-img {
   background-image: url('../images/lil_rogue.png');
 }
-.p5 {
+.p5, .p5-img {
   background-image: url('../images/space_junk.png');
 }
-.p6 {
+.p6, .p6-img {
   background-image: url('../images/sort_anim.png');
 }
-.p7 {
+.p7, .p7-img {
   background-image: url('../images/anim_test.png');
 }
-.p8 {
+.p8, .p8-img {
   background-image: url('../images/pac_man.png');
 }
-.p9 {
+.p9, .p9-img {
   background-image: url('../images/qwertys_qwest.png');
 }
 
+
 .pd {
   width: 100%;
-  height: 600px;
+  height: 500px;
+  min-width: 1000px;
+}
+.detail-left > hr, .detail-right > hr  {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.detail-left {
+  width: 500px;
+  height: 100%;
+  /* outline-color: green;
+  outline-style: solid;
+  outline-width: 1px; */
+}
+.detail-img {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+}
+
+.detail-right {
+  width: 500px;
+  height: 100%;
+  /* outline-color: blue;
+  outline-style: solid;
+  outline-width: 1px; */
+}
+ .detail-left, .detail-right {
+  text-align: center;
+  /* outline-color: blue;
+  outline-style: solid;
+  outline-width: 1px; */
+}
+.floatl {
+  float: left;
+}
+.floatr {
+  float: right;
+}
+.vert-contain {
+  margin: 22% auto auto auto;
+  height: auto;
+  width: 340px;
+  /* outline-color: red;
+  outline-style: solid;
+  outline-width: 1px; */
+}
+.proj-detail-title {
+  font-size: 34px;
+  font-weight: 600;
+}
+.tl-title {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.tl-items {
+  margin: 0px auto 0px auto;
+  width: auto;
+}
+.tl-items > div {
+  margin: 3px auto 3px auto;
+}
+.proj-link {
+  margin: 20px 0px 0px 0px;
 }
 
 .grad1 {
   background: linear-gradient(10deg, #16d8a6, #8776f4);
 }
 
-.pd1 {
+.bg-darkgrey {
   background-color: darkgrey;
 }
-.pd2 {
-
-}
-.pd3 {
-  background-color: darkgrey;
-}
-.pd4 {
-
-}
-.pd5 {
-  background-color: darkgrey;
-}
-.pd6 {
-
-}
-.pd7 {
-  background-color: darkgrey;
-}
-.pd8 {
-
-}
-.pd9 {
-  background-color: darkgrey;
-}
-
-.grid-item-text {
-}
-
 
 /* ////////////////////////////// */
 /* ////////////////////////////// */
@@ -281,4 +304,45 @@ footer img {
   display: grid;
   grid-template-columns: 200px 200px 200px;
   /* grid-template-rows: 100px 100px 100px; */
+}
+
+
+button{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  border-radius: 5px;
+  border-style: hidden;
+  border-width: 0px;
+}
+button:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
 }
