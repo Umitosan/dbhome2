@@ -115,6 +115,16 @@ $(document).ready( function() {
     });
   });
 
+  $(".btn-link").click(function(e) {
+    let link = $(this).find("div").attr("href");
+    console.log('link = ', link);
+    if (link !== undefined) {
+      window.location.href = link;
+    } else {
+      console.log("that's not a link");
+    }
+  });
+
   $('.scrollable').on('click', function(event) {
     console.log('scrollable clicked');
     var target = $(this.getAttribute('href'));

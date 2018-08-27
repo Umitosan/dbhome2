@@ -257,8 +257,24 @@ h3  {
 .tl-items > div {
   margin: 3px auto 3px auto;
 }
-.proj-link {
-  margin: 20px 0px 0px 0px;
+.btn-link{
+  height:60px;
+  width: 180px;
+  margin: 0px auto 0px auto;
+  padding-top: 25px;
+  background:#1AAB8A;
+  color: black;
+  font-size: 34px;
+  cursor:pointer;
+  border:none;
+  border-radius: 5px;
+  border-style: hidden;
+  border-width: 0px;
+  transition:800ms ease all;
+}
+.btn-link:hover {
+  background: white;
+  color:#1AAB8A;
 }
 
 .grad1 {
@@ -268,6 +284,21 @@ h3  {
 .bg-darkgrey {
   background-color: darkgrey;
 }
+
+
+.grid-wrapper {
+  margin: 0px auto 0px auto;
+  width: 600px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  /* grid-template-rows: 100px 100px 100px; */
+}
+
+
+
+
+
+
 
 /* ////////////////////////////// */
 /* ////////////////////////////// */
@@ -294,55 +325,4 @@ footer img {
   /* outline-color: blue;
   outline-style: solid;
   outline-width: 1px; */
-}
-
-
-
-.grid-wrapper {
-  margin: 0px auto 0px auto;
-  width: 600px;
-  display: grid;
-  grid-template-columns: 200px 200px 200px;
-  /* grid-template-rows: 100px 100px 100px; */
-}
-
-
-button{
-  background:#1AAB8A;
-  color:#fff;
-  border:none;
-  position:relative;
-  height:60px;
-  font-size:1.6em;
-  padding:0 2em;
-  cursor:pointer;
-  transition:800ms ease all;
-  outline:none;
-  border-radius: 5px;
-  border-style: hidden;
-  border-width: 0px;
-}
-button:hover{
-  background:#fff;
-  color:#1AAB8A;
-}
-button:before,button:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: #1AAB8A;
-  transition:400ms ease all;
-}
-button:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-}
-button:hover:before,button:hover:after{
-  width:100%;
-  transition:800ms ease all;
 }
