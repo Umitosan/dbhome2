@@ -116,14 +116,24 @@ $(document).ready( function() {
   });
 
   $(".btn-link").click(function(e) {
-    let link = $(this).find("div").attr("href");
-    console.log('link = ', link);
-    if (link !== undefined) {
-      window.location.href = link;
-    } else {
-      console.log("that's not a link");
+    let myHref = $(this).find("div").attr("href");
+    console.log('myHref = ', myHref);
+    let isGIF = $(this).hasClass('gif-link');
+    console.log('is gif? = ', isGIF);
+    if ( (isGIF === true) && (myHref !== undefined) ) {
+        let projVal = $(this).find("div").attr("val");
+        let elStr = ".p"+projVal+"-img";
+        $(elStr).css('background-image', 'url("'+myHref+'")');
+    } else if ( (isGIF === false) && (myHref !== undefined) ) {
+        window.location.href = myHref;
+    }  else {
+      console.log("that's not a href");
     }
   });
+
+
+
+
 
   $('.scrollable').on('click', function(event) {
     console.log('scrollable clicked');
