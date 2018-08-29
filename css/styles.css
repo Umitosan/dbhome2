@@ -121,10 +121,10 @@ h3  {
   overflow: hidden;
   margin: 0px auto 0px auto;
   width: 900px;
-  height: 900px;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  grid-template-rows: repeat(3, 300px);
+  grid-template-rows: repeat(4, 300px);
   /* outline-color: green;
   outline-style: solid;
   outline-width: 1px; */
@@ -188,6 +188,18 @@ h3  {
 }
 .p9, .p9-img {
   background-image: url('../images/qwertys_qwest_md.png');
+}
+.p10 {
+  background-image: url('../images/conways_icon.png');
+}
+.p10-img {
+  background-image: url('../images/conways_lg.png');
+}
+.p11, .p11-img {
+  background-image: url('../images/mine_md.png');
+}
+.p12, .p12-img {
+ /* none yet */
 }
 
 
