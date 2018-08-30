@@ -93,9 +93,7 @@ h3  {
 }
 
 #canvas-logo {
-  /* outline-color: red;
-  outline-width: 1px;
-  outline-style: solid; */
+
 }
 
 #construct-txt {
@@ -112,9 +110,6 @@ h3  {
   background-color: rgba(210,210,210,1);
   padding-top: 40px;
   padding-bottom: 40px;
-  /* outline-color: blue;
-  outline-style: solid;
-  outline-width: 1px; */
 }
 
 .grid {
@@ -125,18 +120,12 @@ h3  {
   display: grid;
   grid-template-columns: repeat(3, 300px);
   grid-template-rows: repeat(4, 300px);
-  /* outline-color: green;
-  outline-style: solid;
-  outline-width: 1px; */
 }
 
 .grid-item {
   border-radius: 10px;
   border-width: 0px;
   cursor: pointer;
-  /* outline-color: red;
-  outline-style: solid;
-  outline-width: 1px; */
 }
 
 .project {
@@ -148,18 +137,12 @@ h3  {
   height: 94%;
   background-size: cover;
   background-repeat: no-repeat;
-  /* outline-color: blue;
-  outline-style: solid;
-  outline-width: 1px; */
 }
 
 .grid-bg {
   padding: 3px;
   height: 95%;
   width:95%;
-  /* outline-color: blue;
-  outline-style: solid;
-  outline-width: 1px; */
 }
 
 .p1, .p1-img {
@@ -171,14 +154,20 @@ h3  {
 .p3, .p3-img {
   background-image: url('../images/uforegon_md.png');
 }
-.p4, .p4-img {
+.p4 {
+  background-size: contain;
+  background-image: url('../images/lil_rogue_archer.png');
+}
+.p4-img {
+  background-size: contain;
+  background-repeat: no-repeat;
   background-image: url('../images/lil_rogue.png');
 }
 .p5, .p5-img {
   background-image: url('../images/space_junk_md.png');
 }
 .p6, .p6-img {
-  background-image: url('../images/sort_anim_md.png');
+  background-image: url('../images/sort_anim_2.png');
 }
 .p7, .p7-img {
   background-image: url('../images/anim_test_md.png');
@@ -249,8 +238,8 @@ h3  {
 .vert-contain {
   margin: 22% auto auto auto;
   height: auto;
-  width: 340px;
-  /* outline-color: red;
+  width: 380px;
+  /* outline-color: green;
   outline-style: solid;
   outline-width: 1px; */
 }
@@ -269,24 +258,35 @@ h3  {
 .tl-items > div {
   margin: 3px auto 3px auto;
 }
-.btn-link{
-  height:60px;
-  width: 180px;
-  margin: 0px auto 0px auto;
-  padding-top: 25px;
+.btns-contain {
+  width: 368px;
+  height: 56px;
+  margin: 4px auto 0px auto;
+  /* outline-color: red;
+  outline-style: solid;
+  outline-width: 1px; */
+}
+.btn-link {
+  height:50px;
+  width: 170px;
+  margin: 0px 5px 0px 5px;
+  float: left;
   background:#1AAB8A;
   color: black;
-  font-size: 34px;
+  font-size: 30px;
   cursor:pointer;
   border:none;
-  border-radius: 5px;
-  border-style: hidden;
-  border-width: 0px;
-  transition:800ms ease all;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  transition:400ms ease all;
 }
 .btn-link:hover {
   background: white;
   color:#1AAB8A;
+}
+.lk {
+  padding-top: 7px;
 }
 
 .grad1 {
@@ -326,7 +326,8 @@ footer img {
 }
 
 .hr-sm {
-  width: 110px;
+  width: 120px;
+  margin: 14px auto 14px auto;
   height: 1px;
   border-color: green;
   border-style: solid;
