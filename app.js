@@ -132,9 +132,6 @@ $(document).ready( function() {
   });
 
 
-
-
-
   $('.scrollable').on('click', function(event) {
     console.log('scrollable clicked');
     var target = $(this.getAttribute('href'));
@@ -161,13 +158,13 @@ $(document).ready( function() {
 
   // opacfadeOut-anim
 
-  $('footer').mouseenter( function() {
-      $('#footer-hr').addClass('fade-black');
-      console.log('footer entered');
-  });
-  $('footer').mouseleave( function() {
-      $('#footer-hr').removeClass('fade-black');
-      console.log('footer left');
-  });
+  // $('footer').mouseenter( function() {
+  //     $('#footer-hr').addClass('fade-black');
+  //     console.log('footer entered');
+  // });
+  // $('footer').mouseleave( function() {
+  //     $('#footer-hr').removeClass('fade-black');
+  //     console.log('footer left');
+  // });
 
 });
