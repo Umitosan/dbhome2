@@ -302,7 +302,7 @@ h3  {
   margin: 3px auto 3px auto;
 }
 .btns-contain {
-  width: 368px;
+  width: 280px;
   height: 56px;
   margin: 4px auto 0px auto;
   /* outline-color: red;
@@ -311,17 +311,17 @@ h3  {
 }
 .btn-link {
   height:50px;
-  width: 170px;
+  width: 128px;
   margin: 0px 5px 0px 5px;
   float: left;
   background:#1AAB8A;
   color: black;
-  font-size: 30px;
+  font-size: 24px;
   cursor:pointer;
   border:none;
-  border-radius: 4px;
+  border-radius: 6px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   transition:400ms ease all;
 }
 .btn-link:hover {
@@ -329,7 +329,7 @@ h3  {
   color:#1AAB8A;
 }
 .lk {
-  padding-top: 7px;
+  padding-top: 11px;
 }
 
 .grad1 {
