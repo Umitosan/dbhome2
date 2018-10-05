@@ -15,6 +15,7 @@
 body {
   margin: 120px 0px 0px 0px;
   background-color: rgba(210,210,210,1);
+  /* background-color: #BFCACB; */
   font-family: 'Comfortaa', cursive;
 }
 
@@ -149,6 +150,7 @@ h3  {
 
 .grid-container {
   background-color: rgba(210,210,210,1);
+  /* background-color: #BFCACB; */
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -160,7 +162,7 @@ h3  {
   height: auto;
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  grid-template-rows: repeat(4, 300px);
+  grid-template-rows: repeat(3, 300px);
 }
 
 .grid-item {
@@ -186,50 +188,47 @@ h3  {
   width:95%;
 }
 
-.p1, .p1-img {
+/* .p-geo, .p-img-geo {
   background-image: url('../images/flower_md.png');
 }
-.p2, .p2-img {
+.p-netviz, .p-img-netviz {
   background-image: url('../images/net_viz_md.png');
-}
-.p3, .p3-img {
+} */
+.p-uforegon, .p-img-uforegon {
   background-image: url('../images/uforegon_md.png');
 }
-.p4 {
+.p-lilrogue {
   background-size: contain;
   background-image: url('../images/lil_rogue_archer.png');
 }
-.p4-img {
+.p-img-lilrogue {
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url('../images/lil_rogue.png');
 }
-.p5, .p5-img {
+.p-spacejunk, .p-img-spacejunk {
   background-image: url('../images/space_junk_md.png');
 }
-.p6, .p6-img {
+.p-sorting, .p-img-sorting {
   background-image: url('../images/sort_anim_2.png');
 }
-.p7, .p7-img {
+.p-animtests, .p-img-animtests {
   background-image: url('../images/anim_test_md.png');
 }
-.p8, .p8-img {
+.p-pacman, .p-img-pacman {
   background-image: url('../images/pac_man.png');
 }
-.p9, .p9-img {
+.p-qwertysquest, .p-img-qwertysquest {
   background-image: url('../images/qwertys_qwest_md.png');
 }
-.p10 {
+.p-gameoflife {
   background-image: url('../images/conways_icon.png');
 }
-.p10-img {
+.p-img-gameoflife {
   background-image: url('../images/conways_lg.png');
 }
-.p11, .p11-img {
+.p-minesweeper, .p-img-minesweeper {
   background-image: url('../images/mine_md.png');
-}
-.p12, .p12-img {
- /* none yet */
 }
 
 
