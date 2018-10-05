@@ -10,13 +10,28 @@
   FONTS
   font-family: 'Comfortaa', cursive;
   font-family: 'Padauk', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Merriweather', serif;
  */
 
 body {
-  margin: 120px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   background-color: rgba(210,210,210,1);
   /* background-color: #BFCACB; */
   font-family: 'Comfortaa', cursive;
+}
+
+.bg-darkgrey {
+  background-color: darkgrey;
+}
+.bg-white {
+  background-color: white;
+}
+.bg-baby-powder {
+  background-color: #FEFEFA;
+}
+.bg-ghost-white {
+  background-color: #F8F8FF;
 }
 
 h3  {
@@ -88,7 +103,7 @@ h3  {
 }
 .proj-list-menu {
   opacity: 0;
-  background-color: darkgrey;
+  background-color: lightgrey;
   position: fixed;
   padding-top: 10px;
   top: 60px;
@@ -122,6 +137,41 @@ h3  {
   outline-style: solid;
   outline-color: black; */
 }
+
+.about-container {
+  margin: 60px auto 0px auto;
+  padding-top: 250px;
+  height: 500px;
+  /* outline-width: 1px;
+  outline-style: solid;
+  outline-color: green; */
+}
+.about-bar {
+  margin: 0px auto 0px auto;
+  height: 220px;
+  width: 440px;
+  /* outline-width: 1px;
+  outline-style: solid;
+  outline-color: blue; */
+}
+.about-line {
+  margin-left: 100px;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+}
+.abl1, .abl2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50px;
+}
+.abl1 {
+  margin-top: 20px;
+}
+.abl2 {
+  margin-bottom: 20px;
+}
+
+
 
 .canvas-bar {
   margin: 0px auto 0px auto;
@@ -334,11 +384,6 @@ h3  {
 .grad1 {
   background: linear-gradient(10deg, #16d8a6, #8776f4);
 }
-
-.bg-darkgrey {
-  background-color: darkgrey;
-}
-
 
 .grid-wrapper {
   margin: 0px auto 0px auto;
