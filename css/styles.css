@@ -54,7 +54,7 @@ h3  {
   margin-top: 0px;
   width: 100%;
   height: 60px;
-  background-color: grey;
+  background-color: lightgrey;
 }
 .nav-item {
   height: 60px;
@@ -93,7 +93,7 @@ h3  {
   height: 6px;
   width: 44px;
   margin: 7px auto;
-  background-color: lightgrey;
+  background-color: darkgrey;
   border-width: 1px;
   border-style: none;
   border-radius: 2px;
@@ -110,8 +110,9 @@ h3  {
   right: 0px;
   width: 200px;
   height: 0px;
-  border-left: solid white 2px;
-  border-bottom: solid white 2px;
+  border-left: solid lightgreen 2px;
+  border-bottom: solid lightgreen 2px;
+  /* border-top: solid lightgreen 2px; */
   border-radius: 0px 0px 0px 12px; /* top-left | top-right | bottom-right | bottom-left */
 }
 .menu:hover .proj-list-menu {
@@ -138,6 +139,17 @@ h3  {
   outline-color: black; */
 }
 
+
+@media screen and (min-width: 1px) and (max-width: 750px) {
+  div.about-container {
+    padding-top: 140px;
+    height: 400px;
+  }
+  .about-bar {
+    margin: 0px auto 0px auto;
+  }
+}
+
 .about-container {
   margin: 60px auto 0px auto;
   padding-top: 250px;
@@ -148,6 +160,7 @@ h3  {
 }
 .about-bar {
   margin: 0px auto 0px auto;
+  padding-left: 100px;
   height: 220px;
   width: 440px;
   /* outline-width: 1px;
@@ -155,8 +168,6 @@ h3  {
   outline-color: blue; */
 }
 .about-line {
-  margin-left: 100px;
-  /* font-family: 'Open Sans', sans-serif; */
   font-family: 'Merriweather', serif;
   font-size: 20px;
 }
@@ -174,7 +185,7 @@ h3  {
 
 
 .canvas-bar {
-  margin: 0px auto 0px auto;
+  margin: 40px auto 0px auto;
 }
 
 .canvas-container {
@@ -201,8 +212,8 @@ h3  {
 .grid-container {
   background-color: rgba(210,210,210,1);
   /* background-color: #BFCACB; */
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 80px;
 }
 
 .grid {
