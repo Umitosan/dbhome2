@@ -245,6 +245,10 @@ h3  {
   height: 94%;
   background-size: cover;
   background-repeat: no-repeat;
+
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  -webkit-box-shadow: box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .grid-bg {
@@ -391,6 +395,9 @@ h3  {
   border-style: solid;
   border-width: 1px;
   transition:400ms ease all;
+
+  -webkit-box-shadow: box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.3);
 }
 .btn-link:hover {
   background: white;
@@ -450,9 +457,9 @@ footer img {
   width: 120px;
   margin: 14px auto 14px auto;
   height: 1px;
-  border-color: green;
+  border-color: #80d0c7;
   border-style: solid;
-  background-color: green;
+  background-color: #80d0c7;
 }
 
 .footer-item {
