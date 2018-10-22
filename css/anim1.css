@@ -1,65 +1,47 @@
-
-
 @keyframes flipH {
-    to {
-      transform: rotate(180deg);
-    }
-}
+  to {
+    transform: rotate(180deg); } }
 .flip-horiz {
   animation-name: flipH;
   animation-duration: 4s;
   animation-delay: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-direction: alternate;
-}
-
+  animation-direction: alternate; }
 
 @keyframes fadeToBlack {
-    to {
-      width: 110px;
-      height: 1px;
-      border-color: black;
-      border-style: solid;
-      background-color: black;
-    }
-}
+  to {
+    width: 110px;
+    height: 1px;
+    border-color: black;
+    border-style: solid;
+    background-color: black; } }
 .fade-black {
   animation-name: fadeToBlack;
   animation-duration: 2s;
   animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-direction: alternate;
-}
-
+  animation-direction: alternate; }
 
 @keyframes grads1 {
-    from {
-      background: linear-gradient(blue, white, lightgreen);
-    }
-    to {
-      background: linear-gradient(lightgreen, white, blue);
-    }
-}
+  from {
+    background: linear-gradient(blue, white, lightgreen); }
+  to {
+    background: linear-gradient(lightgreen, white, blue); } }
 .grad-anim1 {
   animation-name: grads1;
   animation-duration: 1s;
   animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-direction: alternate;
-}
-
+  animation-direction: alternate; }
 
 @keyframes grads2 {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-}
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 .grad-anim2 {
   overflow: hidden;
   animation-name: grads2;
@@ -67,59 +49,46 @@
   animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  /* animation-direction: alternate; */
-}
+  /* animation-direction: alternate; */ }
 
 @keyframes opac1 {
   from {
-    opacity: 1;
-  }
+    opacity: 1; }
   to {
-    opacity: 0.5;
-  }
-}
+    opacity: 0.5; } }
 .opacity-anim1 {
   animation-name: opac1;
   animation-duration: 0.5s;
   animation-delay: 0s;
   animation-iteration-count: 4;
   animation-timing-function: linear;
-  animation-direction: alternate;
-}
+  animation-direction: alternate; }
 
 @keyframes opacfadeOut {
   from {
-    opacity: 1;
-  }
+    opacity: 1; }
   to {
-    opacity: 0;
-  }
-}
+    opacity: 0; } }
 .opacfadeOut-anim {
   animation-name: opacfadeOut;
   animation-duration: 0.5s;
   animation-delay: 0s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
-  animation-direction: normal;
-}
+  animation-direction: normal; }
 
 @keyframes opacfadeIn {
   from {
-    opacity: 0;
-  }
+    opacity: 0; }
   to {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
 .opacfadeIn-anim {
   animation-name: opacfadeIn;
   animation-duration: 0.5s;
   animation-delay: 0s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
-  animation-direction: normal;
-}
+  animation-direction: normal; }
 
 /*
 animation long
@@ -137,3 +106,5 @@ shorthand
   animation: tutsFade 4s 1s infinite linear alternate;
 }
 */
+
+/*# sourceMappingURL=anim1.css.map */
