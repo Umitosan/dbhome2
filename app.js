@@ -100,15 +100,11 @@ $(document).ready( function() {
   // project mouse over events
   $('.grid-item').each( function() {
     $(this).mouseenter( function() {
-      // $(this).css("background-color",colors.darkblue);
-      // $(this).css("background","linear-gradient(green, lightgreen, pink)");
-      // $(this).css("background","linear-gradient(blue, white, lightgreen)");
       $(this).addClass('grad1');
       $(this).find(".project").addClass('opacity-anim1');
       $(this .project).find('.grid-item-text').text("");
     });
     $(this).mouseleave( function() {
-      // $(this).css("background-color",colors.ltgrey2);
       $(this).removeClass('grad1');
       $(this).find(".project").removeClass('opacity-anim1');
       $(this).find('.grid-item-text').text("");
@@ -117,12 +113,15 @@ $(document).ready( function() {
 
   $(".btn-link").click(function(e) {
     let myHref = $(this).find("div").attr("href");
-    console.log('myHref = ', myHref);
     let isGIF = $(this).hasClass('gif-link');
+    // console.log('myHref = ', myHref);
     console.log('is gif? = ', isGIF);
     if ( (isGIF === true) && (myHref !== undefined) ) {
+        // console.log("trying to put gif");
         let projVal = $(this).find("div").attr("val");
-        let elStr = ".p"+projVal+"-img";
+        let elStr = ".p-img-"+projVal;
+        // console.log("projVal: ", projVal);
+        // console.log("elStr: ", elStr);
         $(elStr).css('background-image', 'url("'+myHref+'")');
     } else if ( (isGIF === false) && (myHref !== undefined) ) {
         window.location.href = myHref;
@@ -133,7 +132,7 @@ $(document).ready( function() {
 
 
   $('.scrollable').on('click', function(event) {
-    console.log('scrollable clicked');
+    // console.log('scrollable clicked');
     var target = $(this.getAttribute('href'));
     if( target.length ) {
       event.preventDefault();
