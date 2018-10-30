@@ -10,14 +10,6 @@
   teal custom: #1AAB8A;
 */
 
-$cust-teal: #80d0c7;
-$cust-gold: #dcc78e;
-$lt-gold: rgb(244, 237, 218);
-$deep-gold: #FCCF0D;
-
-$lt-blue: rgb(175, 225, 220);
-$very-lt-blue: #c0e0e0;
-
 /*
   FONTS
   font-family: 'Comfortaa', cursive;
@@ -26,6 +18,9 @@ $very-lt-blue: #c0e0e0;
   font-family: 'Merriweather', serif;
   font-family: 'Nunito', sans-serif;
   font-family: 'Rubik', sans-serif;
+  font-family: 'Oxygen Mono', monospace;
+  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Ubuntu', sans-serif;
 */
 
 
@@ -35,11 +30,28 @@ $very-lt-blue: #c0e0e0;
   background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
 */
 
+$cust-teal: #80d0c7;
+$cust-teal-alpha: rgba(128, 208, 199, 0.1);
+$cust-teal-lt: rgb(237, 255, 252);
 
+$cust-gold: #dcc78e;
+$lt-gold: rgb(244, 237, 218);
+$deep-gold: #FCCF0D;
+
+$lt-blue: rgb(175, 225, 220);
+$very-lt-blue: #c0e0e0;
+
+$sky-grey1: rgb(148, 176, 190);
+$sky-grey2: rgb(184, 198, 211);
+$sky-peach1: rgb(220, 174, 141);
+
+// primary resued colors
 $c1: $cust-teal;
-// $c1: $cust-teal;
-$c2: $cust-gold;
-// $c2: $new-1;
+$c2: $very-lt-blue;
+$c3: $deep-gold;
+$lt-bg: $lt-gold;
+$trim: $sky-grey1;
+
 
 body {
   margin: 0px 0px 0px 0px;
@@ -55,22 +67,22 @@ h3  {
   margin: 8px auto 6px auto;
   height: 2px;
   width: 40px;
-  background-color: $c1;
+  background-color: $trim;
   border-radius: 1px;
   border-width: 0px;
   border-style: hidden;
 }
 
 .nav-bar {
-  background-color: $lt-gold;
+  background-image: linear-gradient(to top, $sky-grey1 15%, $very-lt-blue);
   position: fixed;
   top: 0;
   margin-top: 0px;
   width: 100%;
   height: 60px;
-  outline-color: $c2;
-  outline-width: 2px;
-  outline-style: solid;
+  // outline-color: $trim;
+  // outline-width: 4px;
+  // outline-style: solid;
 }
 .nav-item {
   height: 60px;
@@ -92,20 +104,17 @@ h3  {
   cursor: pointer;
   display: block;
   margin: 0px auto;
-  /* outline-color: green;
-  outline-width: 1px;
-  outline-style: solid; */
 }
 .menu:hover > .menu-bar {
   /* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]; */
-  background-color: gold;
+  background-color: $c3;
   transition: background-color 0.5s ease;
 }
 .menu-bar {
   height: 6px;
   width: 44px;
   margin: 7px auto;
-  background-color: $c1;
+  background-color: white;
   border-width: 1px;
   border-style: none;
   border-radius: 2px;
@@ -113,17 +122,18 @@ h3  {
 #menu-bar-top {
   margin-top: 14px;
 }
+
 .proj-list-menu {
   opacity: 0;
-  background-color: $lt-gold;
+  background-color: $sky-grey2;
   position: fixed;
   padding-top: 10px;
   top: 60px;
   right: 0px;
   width: 200px;
   height: 0px;
-  border-left: solid  $c2 2px;
-  border-bottom: solid  $c2 2px;
+  border-left: solid $trim 2px;
+  border-bottom: solid $trim 2px;
   /* border-top: solid lightgreen 2px; */
   border-radius: 0px 0px 0px 12px; /* top-left | top-right | bottom-right | bottom-left */
 }
@@ -133,22 +143,23 @@ h3  {
   transition: all 1s ease;
 }
 .menu-item {
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  // font-family: 'Padauk', sans-serif;
+  // font-weight: bold;
+  // text-shadow: 1px 1px 2px black;
   opacity: 1;
   text-align: center;
   width: 100%;
   height: 0px;
   font-size: 18px;
-  color:black;
 }
 .menu:hover .menu-item  {
   height: 20px;
   transition: height 1s ease;
 }
 .menu-item:hover {
-  background-color: rgb(175, 225, 220);
-  /* outline-width: 1px;
-  outline-style: solid;
-  outline-color: black; */
+  background-color: $deep-gold;
 }
 
 
@@ -164,16 +175,17 @@ h3  {
 
 .about-container {
   margin: 60px auto 0px auto;
-  padding-top: 250px;
+  padding-top: 400px;
   height: 500px;
-  background-image: linear-gradient(to bottom right, white, $c1);
-  /* outline-width: 1px;
-  outline-style: solid;
-  outline-color: green; */
+  color: white;
+  text-shadow: 2px 2px 12px black;
+  // background-image: linear-gradient(to bottom right, $cust-teal-lt, $c1);
+  background-image: url("../images/me_2.jpg");
+  background-size: cover;
 }
 .about-bar {
   margin: 0px auto 0px auto;
-  padding-left: 100px;
+  padding-left: 120px;
   height: 220px;
   width: 440px;
   /* outline-width: 1px;
@@ -185,7 +197,7 @@ h3  {
 }
 .abl1, .abl2 {
   font-family: 'Padauk', sans-serif;
-  font-size: 54px;
+  font-size: 60px;
 }
 .abl1 {
   margin-top: 20px;
@@ -193,12 +205,17 @@ h3  {
 .abl2 {
   margin-bottom: 20px;
 }
+.abl3 {
+  font-size: 24px;
+  font-family: 'Ubuntu Mono', monospace;
+}
 
 
 .projects-main-contain {
-  background-image: linear-gradient(to bottom right, white, $c2);
+  // background-image: linear-gradient(to bottom right, $cust-teal-lt, $c2);
+  background-color: $cust-teal-lt;
   padding-top: 40px;
-  outline-color: $c2;
+  outline-color: $trim;
   outline-width: 2px;
   outline-style: solid;
 }
@@ -320,8 +337,8 @@ h3  {
   width: 100%;
   height: 500px;
   min-width: 1000px;
-  outline-color: $c2;
-  outline-width: 1px;
+  outline-color: $trim;
+  outline-width: 2px;
   outline-style: solid;
 }
 .detail-left > hr, .detail-right > hr  {
@@ -332,9 +349,6 @@ h3  {
 .detail-left {
   width: 500px;
   height: 100%;
-  /* outline-color: green;
-  outline-style: solid;
-  outline-width: 1px; */
 }
 .detail-img {
   height: 100%;
@@ -346,15 +360,9 @@ h3  {
 .detail-right {
   width: 500px;
   height: 100%;
-  /* outline-color: blue;
-  outline-style: solid;
-  outline-width: 1px; */
 }
  .detail-left, .detail-right {
   text-align: center;
-  /* outline-color: blue;
-  outline-style: solid;
-  outline-width: 1px; */
 }
 .floatl {
   float: left;
@@ -366,9 +374,6 @@ h3  {
   margin: 22% auto auto auto;
   height: auto;
   width: 380px;
-  /* outline-color: green;
-  outline-style: solid;
-  outline-width: 1px; */
 }
 .proj-detail-title {
   font-family: 'Comfortaa', cursive;
@@ -390,9 +395,6 @@ h3  {
   width: 280px;
   height: 56px;
   margin: 4px auto 0px auto;
-  /* outline-color: red;
-  outline-style: solid;
-  outline-width: 1px; */
 }
 .btn-link {
   height:50px;
@@ -409,7 +411,6 @@ h3  {
   border-style: solid;
   border-width: 1px;
   transition:400ms ease all;
-
   -webkit-box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.3);
 }
@@ -428,15 +429,11 @@ h3  {
 }
 
 .bg-grad-1 {
-  background-image: linear-gradient(to left, white 0%, $c1 100%);
+  background-image: linear-gradient(to left, $cust-teal-lt 0%, $c1 100%);
 }
 
 .bg-grad-2 {
-  /* lightgreen */
-  /* background-image: linear-gradient(to top, white 0%, #c1dfc4 100%); */
-
-  /* gold */
-  background-image: linear-gradient(to right, white 0%, $c2 100%);
+  background-image: linear-gradient(to right, $cust-teal-lt 0%, $c2 100%);
 }
 
 .grid-wrapper {
@@ -460,7 +457,7 @@ footer {
   padding-top: 20px;
   text-align: center;
   padding-bottom: 20px;
-  background-color: $lt-gold;
+  background-image: linear-gradient(to top, $sky-grey1 15%, $very-lt-blue);
 }
 footer img {
   height: 100px;
@@ -471,9 +468,9 @@ footer img {
   width: 120px;
   margin: 14px auto 14px auto;
   height: 1px;
-  border-color: $c1;
+  border-color: $trim;
   border-style: solid;
-  background-color: $c1;
+  background-color: $trim;
 }
 
 .footer-item {

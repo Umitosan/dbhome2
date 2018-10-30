@@ -15,9 +15,6 @@
   font-family: 'Merriweather', serif;
   font-family: 'Nunito', sans-serif;
   font-family: 'Rubik', sans-serif;
-  font-family: 'Oxygen Mono', monospace;
-  font-family: 'Ubuntu Mono', monospace;
-  font-family: 'Ubuntu', sans-serif;
 */
 /* GRADIENTS
   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -36,18 +33,21 @@ h3 {
   margin: 8px auto 6px auto;
   height: 2px;
   width: 40px;
-  background-color: #94b0be;
+  background-color: #80d0c7;
   border-radius: 1px;
   border-width: 0px;
   border-style: hidden; }
 
 .nav-bar {
-  background-image: linear-gradient(to top, #94b0be 15%, #c0e0e0);
+  background-color: white;
   position: fixed;
   top: 0;
   margin-top: 0px;
   width: 100%;
-  height: 60px; }
+  height: 60px;
+  outline-color: #dcc78e;
+  outline-width: 2px;
+  outline-style: solid; }
 
 .nav-item {
   height: 60px;
@@ -68,7 +68,10 @@ h3 {
 .menu {
   cursor: pointer;
   display: block;
-  margin: 0px auto; }
+  margin: 0px auto;
+  /* outline-color: green;
+  outline-width: 1px;
+  outline-style: solid; */ }
 
 .menu:hover > .menu-bar {
   /* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]; */
@@ -79,7 +82,7 @@ h3 {
   height: 6px;
   width: 44px;
   margin: 7px auto;
-  background-color: white;
+  background-color: #80d0c7;
   border-width: 1px;
   border-style: none;
   border-radius: 2px; }
@@ -89,15 +92,15 @@ h3 {
 
 .proj-list-menu {
   opacity: 0;
-  background-color: #b8c6d3;
+  background-color: white;
   position: fixed;
   padding-top: 10px;
   top: 60px;
   right: 0px;
   width: 200px;
   height: 0px;
-  border-left: solid #94b0be 2px;
-  border-bottom: solid #94b0be 2px;
+  border-left: solid #dcc78e 2px;
+  border-bottom: solid #dcc78e 2px;
   /* border-top: solid lightgreen 2px; */
   border-radius: 0px 0px 0px 12px;
   /* top-left | top-right | bottom-right | bottom-left */ }
@@ -108,20 +111,22 @@ h3 {
   transition: all 1s ease; }
 
 .menu-item {
-  color: black;
-  font-family: 'Ubuntu', sans-serif;
   opacity: 1;
   text-align: center;
   width: 100%;
   height: 0px;
-  font-size: 18px; }
+  font-size: 18px;
+  color: black; }
 
 .menu:hover .menu-item {
   height: 20px;
   transition: height 1s ease; }
 
 .menu-item:hover {
-  background-color: #FCCF0D; }
+  background-color: #f4edda;
+  /* outline-width: 1px;
+  outline-style: solid;
+  outline-color: black; */ }
 
 @media screen and (min-width: 1px) and (max-width: 750px) {
   div.about-container {
@@ -132,16 +137,16 @@ h3 {
     margin: 0px auto 0px auto; } }
 .about-container {
   margin: 60px auto 0px auto;
-  padding-top: 400px;
+  padding-top: 250px;
   height: 500px;
-  color: white;
-  text-shadow: 2px 2px 12px black;
-  background-image: url("../images/me_2.jpg");
-  background-size: cover; }
+  background-image: linear-gradient(to bottom right, white, #80d0c7);
+  /* outline-width: 1px;
+  outline-style: solid;
+  outline-color: green; */ }
 
 .about-bar {
   margin: 0px auto 0px auto;
-  padding-left: 120px;
+  padding-left: 100px;
   height: 220px;
   width: 440px;
   /* outline-width: 1px;
@@ -153,7 +158,7 @@ h3 {
 
 .abl1, .abl2 {
   font-family: 'Padauk', sans-serif;
-  font-size: 60px; }
+  font-size: 54px; }
 
 .abl1 {
   margin-top: 20px; }
@@ -161,14 +166,10 @@ h3 {
 .abl2 {
   margin-bottom: 20px; }
 
-.abl3 {
-  font-size: 24px;
-  font-family: 'Ubuntu Mono', monospace; }
-
 .projects-main-contain {
-  background-color: #edfffc;
+  background-image: linear-gradient(to bottom right, white, white);
   padding-top: 40px;
-  outline-color: #94b0be;
+  outline-color: white;
   outline-width: 2px;
   outline-style: solid; }
 
@@ -272,8 +273,8 @@ h3 {
   width: 100%;
   height: 500px;
   min-width: 1000px;
-  outline-color: #94b0be;
-  outline-width: 2px;
+  outline-color: white;
+  outline-width: 1px;
   outline-style: solid; }
 
 .detail-left > hr, .detail-right > hr {
@@ -282,7 +283,10 @@ h3 {
 
 .detail-left {
   width: 500px;
-  height: 100%; }
+  height: 100%;
+  /* outline-color: green;
+  outline-style: solid;
+  outline-width: 1px; */ }
 
 .detail-img {
   height: 100%;
@@ -292,10 +296,16 @@ h3 {
 
 .detail-right {
   width: 500px;
-  height: 100%; }
+  height: 100%;
+  /* outline-color: blue;
+  outline-style: solid;
+  outline-width: 1px; */ }
 
 .detail-left, .detail-right {
-  text-align: center; }
+  text-align: center;
+  /* outline-color: blue;
+  outline-style: solid;
+  outline-width: 1px; */ }
 
 .floatl {
   float: left; }
@@ -306,7 +316,10 @@ h3 {
 .vert-contain {
   margin: 22% auto auto auto;
   height: auto;
-  width: 380px; }
+  width: 380px;
+  /* outline-color: green;
+  outline-style: solid;
+  outline-width: 1px; */ }
 
 .proj-detail-title {
   font-family: 'Comfortaa', cursive;
@@ -327,7 +340,10 @@ h3 {
 .btns-contain {
   width: 280px;
   height: 56px;
-  margin: 4px auto 0px auto; }
+  margin: 4px auto 0px auto;
+  /* outline-color: red;
+  outline-style: solid;
+  outline-width: 1px; */ }
 
 .btn-link {
   height: 50px;
@@ -360,10 +376,13 @@ h3 {
   background-image: linear-gradient(to bottom right, #f7e8c0 0%, #80d0c7 100%); }
 
 .bg-grad-1 {
-  background-image: linear-gradient(to left, #edfffc 0%, #80d0c7 100%); }
+  background-image: linear-gradient(to left, white 0%, #80d0c7 100%); }
 
 .bg-grad-2 {
-  background-image: linear-gradient(to right, #edfffc 0%, #c0e0e0 100%); }
+  /* lightgreen */
+  /* background-image: linear-gradient(to top, white 0%, #c1dfc4 100%); */
+  /* gold */
+  background-image: linear-gradient(to right, white 0%, white 100%); }
 
 .grid-wrapper {
   margin: 0px auto 0px auto;
@@ -379,7 +398,7 @@ footer {
   padding-top: 20px;
   text-align: center;
   padding-bottom: 20px;
-  background-image: linear-gradient(to top, #94b0be 15%, #c0e0e0); }
+  background-color: white; }
 
 footer img {
   height: 100px;
@@ -389,9 +408,9 @@ footer img {
   width: 120px;
   margin: 14px auto 14px auto;
   height: 1px;
-  border-color: #94b0be;
+  border-color: #80d0c7;
   border-style: solid;
-  background-color: #94b0be; }
+  background-color: #80d0c7; }
 
 .footer-item {
   /* outline-color: blue;
