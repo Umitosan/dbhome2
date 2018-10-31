@@ -1,8 +1,11 @@
 /* jshint esversion: 6 */
 
-var canvasLogo;
-var ctx;
-var myLogo;
+var canvasLogo,
+    ctx,
+    canvasLogo2,
+    ctx2,
+    myLogo,
+    ctxLogoImg;
 
 var colors = {
   ltgrey1: 'rgba(150, 150, 150, 1)',
@@ -15,10 +18,31 @@ var colors = {
   darkblue:   'rgb(51, 102, 255)'
 };
 
+/* chic color 1-5
+columbia blue:  #B8D8D8
+weldon blue:    #7A9E9F
+stormcloud:     #4F5367
+beige:          #EEF5DB
+sunset orange:  #FE5F55
+*/
+
+
 function Logo() {
-  this.color1 = colors.hotpink;
-  this.color2 = colors.green;
-  this.color3 = colors.yellow;
+  // orig scheme
+  // this.color1 = colors.hotpink;
+  // this.color2 = colors.green;
+  // this.color3 = colors.yellow;
+
+  this.color1 = '#4F5367';
+  this.color2 = '#7A9E9F';
+  this.color3 = '#FE5F55';
+
+  this.imgSnapshot = undefined;
+
+  this.init = function() {
+    this.draw();
+    this.imgSnapshot = ctx.getImageData(0,0,canvasLogo.width,canvasLogo.height);
+  };
 
   this.draw = function() {
     ctx.fillStyle = this.color1;
@@ -88,14 +112,22 @@ function clearCanvas() {
 $(document).ready( function() {
   canvasLogo = document.getElementById('canvas-logo');
   ctx = canvasLogo.getContext('2d');
+  canvasLogo2 = document.getElementById('canvas-logo2');
+  ctx2 = canvasLogo2.getContext('2d');
   myLogo = new Logo();
-  myLogo.draw();
+  myLogo.init();
+  // void ctx.putImageData(imagedata, dx, dy, dirtyX, dirtyY, dirtyWidth, dirtyHeight);
+  // ctx2.putImageData(myLogo.imgSnapshot,0,0,0,0,60,60);
+  // void ctx.drawImage(image, dx, dy, dWidth, dHeight);
+  ctx2.drawImage(canvasLogo,0,0,60,60);
+
+   // ctx.putImageData(this.lvlImage1,0,0);
 
   setInterval(function(){
     clearCanvas();
     myLogo.draw();
     myLogo.update();
-  }, 800);
+  }, 1000);
 
   // project mouse over events
   $('.grid-item').each( function() {

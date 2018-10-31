@@ -56,12 +56,6 @@ h3 {
 .nav-left {
   float: left; }
 
-.logo {
-  background-image: url("../images/logo-no-bg2.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat; }
-
 .nav-right {
   float: right; }
 
