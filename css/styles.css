@@ -41,6 +41,14 @@ h3 {
   border-width: 0px;
   border-style: hidden; }
 
+.hr-sm-green {
+  width: 120px;
+  margin: 14px auto 14px auto;
+  height: 1px;
+  background-color: #94b0be;
+  border-color: #94b0be;
+  border-style: solid; }
+
 .nav-bar {
   background-image: linear-gradient(to top, #94b0be 15%, #c0e0e0);
   position: fixed;
@@ -359,37 +367,58 @@ h3 {
 .bg-grad-2 {
   background-image: linear-gradient(to right, #edfffc 0%, #c0e0e0 100%); }
 
-.grid-wrapper {
-  margin: 0px auto 0px auto;
-  width: 600px;
-  display: grid;
-  grid-template-columns: 200px 200px 200px;
-  /* grid-template-rows: 100px 100px 100px; */ }
-
 /* ////////////////////////////// */
 /* ////////////////////////////// */
 /* ////////////////////////////// */
 footer {
-  padding-top: 20px;
   text-align: center;
-  padding-bottom: 20px;
-  background-image: linear-gradient(to top, #94b0be 15%, #c0e0e0); }
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px black;
+  background-image: url("../images/tech_bg1.jpeg");
+  background-position: top;
+  background-size: cover; }
+
+.grid-wrapper {
+  margin: 0px auto 0px auto;
+  width: 700px;
+  display: grid;
+  grid-template-columns: 200px 300px 200px;
+  /* grid-template-rows: 100px 100px 100px; */ }
 
 footer img {
   height: 100px;
   width: 100px; }
 
-.hr-sm-green {
+.hr-sm-footer {
   width: 120px;
   margin: 14px auto 14px auto;
   height: 1px;
-  border-color: #94b0be;
-  border-style: solid;
-  background-color: #94b0be; }
+  background-color: #80d0c7;
+  border-color: #80d0c7;
+  border-style: solid; }
 
-.footer-item {
-  /* outline-color: blue;
-  outline-style: solid;
-  outline-width: 1px; */ }
+footer .icon {
+  padding-top: 30px; }
+
+@media screen and (min-width: 1px) and (max-width: 760px) {
+  footer {
+    font-size: 20px; }
+
+  .grid-wrapper {
+    width: 600px;
+    grid-template-columns: 200px 200px 200px; }
+
+  footer .icon {
+    padding-top: 18px; }
+
+  .hr-sm-footer {
+    width: 60px; }
+
+  .contact-container {
+    padding-top: 14px; } }
 
 /*# sourceMappingURL=styles.css.map */
