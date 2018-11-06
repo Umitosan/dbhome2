@@ -52,6 +52,11 @@ $c3: $deep-gold;
 $lt-bg: $lt-gold;
 $trim: $sky-grey1;
 
+// logo Colors
+$logo-grey: #4F5367; // rgb(79,83,103)  greyish
+$logo-mossy: #7A9E9F; // rgb(122,158,159) mossy green
+$logo-brick: #FE5F55; // rgb(254,95,85) bright brick
+
 
 body {
   margin: 0px 0px 0px 0px;
@@ -89,33 +94,51 @@ h3  {
   margin-top: 0px;
   width: 100%;
   height: 60px;
-  // outline-color: $trim;
-  // outline-width: 4px;
-  // outline-style: solid;
 }
-.nav-item {
+.nav-left-group {
+  float: left;
+  margin: 0px 0px 0px 20px;
+}
+.nav-left-item {
   height: 60px;
   width: 70px;
 }
-.nav-left {
-  float: left;
-}
-.logo {
-  // background-image: url("../images/logo-no-bg2.png");
-  // background-size: contain;
-  // background-position: center;
-  // background-repeat: no-repeat;
-}
-#canvas-logo2 {
-
-}
-.nav-right {
+#canvas-logo2 { }
+.nav-right-group {
+  width: auto;
+  display: inline-flex;
   float: right;
+  // outline-color: red;
+  // outline-width: 1px;
+  // outline-style: solid;
+}
+.nav-right-item {
+  height: 60px;
+  width: 140px;
+  text-align: center;
+  // outline-color: green;
+  // outline-width: 1px;
+  // outline-style: solid;
+}
+.nav-right-item:hover {
+  cursor: pointer;
+}
+.nav-text {
+  height: auto;
+  font-size: 18px;
+  margin-top: 20px;
+  font-family: 'Comfortaa', cursive;
+  // font-family: 'Ubuntu', sans-serif;
+  // font-family: 'Padauk', sans-serif;
+  color: white;
+  text-shadow: 2px 2px 6px $logo-grey;
+}
+.nav-text:hover {
+  color: black;
 }
 .menu {
   cursor: pointer;
-  display: block;
-  margin: 0px auto;
+  margin: 0px 0px 0px 0px;
 }
 .menu:hover > .menu-bar {
   /* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]; */
@@ -149,7 +172,8 @@ h3  {
   /* border-top: solid lightgreen 2px; */
   border-radius: 0px 0px 0px 12px; /* top-left | top-right | bottom-right | bottom-left */
 }
-.menu:hover .proj-list-menu {
+.menu { }
+.menu:hover > .proj-list-menu {
   height: 264px;
   opacity: 1;
   transition: all 1s ease;
@@ -157,9 +181,6 @@ h3  {
 .menu-item {
   color: black;
   font-family: 'Ubuntu', sans-serif;
-  // font-family: 'Padauk', sans-serif;
-  // font-weight: bold;
-  // text-shadow: 1px 1px 2px black;
   opacity: 1;
   text-align: center;
   width: 100%;

@@ -33,9 +33,9 @@ function Logo() {
   // this.color2 = colors.green;
   // this.color3 = colors.yellow;
 
-  this.color1 = '#4F5367';
-  this.color2 = '#7A9E9F';
-  this.color3 = '#FE5F55';
+  this.color1 = '#4F5367'; // rgb(79,83,103)  greyish
+  this.color2 = '#7A9E9F'; // rgb(122,158,159) mossy green
+  this.color3 = '#FE5F55'; // rgb(254,95,85) bright brick
 
   this.imgSnapshot = undefined;
 
