@@ -196,10 +196,18 @@ h3  {
 }
 
 
-@media screen and (min-width: 1px) and (max-width: 750px) {
+
+@media screen and (min-width: 1490px) and (max-width: 1680px) {
+  div.about-container { background-position: -128px top; }
+}
+@media screen and (min-width: 750px) and (max-width: 1489px) {
+  div.about-container { background-position: 50% top; }
+}
+@media screen and (min-width: 1px) and (max-width: 749px) {
   div.about-container {
     padding-top: 140px;
     height: 400px;
+    background-position: 80% top;
   }
   .about-bar {
     margin: 0px auto 0px auto;
@@ -213,8 +221,9 @@ h3  {
   color: white;
   text-shadow: 2px 2px 12px black;
   // background-image: linear-gradient(to bottom right, $cust-teal-lt, $c1);
-  background-image: url("../images/me_2.jpg");
+  background-image: url("../images/me_2_crop.jpg");
   background-size: cover;
+  background-position: right top;
 }
 .about-bar {
   margin: 0px auto 0px auto;
