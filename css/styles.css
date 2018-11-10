@@ -229,13 +229,44 @@ h3 {
   width: 900px;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(3, 300px);
-  grid-template-rows: repeat(3, 300px); }
+  display: -ms-grid;
+  -ms-grid-columns: 300px 300px 300px;
+  -ms-grid-rows: 300px 300px 300px;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px 300px; }
 
 .grid-item {
   border-radius: 10px;
   border-width: 0px;
-  cursor: pointer; }
+  cursor: pointer;
+  /** Explicit Positioning - For IE 10, IE 11 and Edge > 16 */ }
+  .grid-item:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1; }
+  .grid-item:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2; }
+  .grid-item:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3; }
+  .grid-item:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1; }
+  .grid-item:nth-child(5) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2; }
+  .grid-item:nth-child(6) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3; }
+  .grid-item:nth-child(7) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1; }
+  .grid-item:nth-child(8) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2; }
+  .grid-item:nth-child(9) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3; }
 
 .project {
   border-radius: 8px;
