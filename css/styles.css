@@ -55,13 +55,19 @@ h3 {
   border-color: #94b0be;
   border-style: solid; }
 
-.nav-bar {
-  background-image: linear-gradient(to top, #94b0be 15%, #c0e0e0);
-  position: fixed;
+.nav-bar-contain {
+  width: 100%;
+  height: 60px;
   top: 0;
   margin-top: 0px;
+  background-image: linear-gradient(to top, #94b0be 15%, #c0e0e0);
+  position: fixed; }
+
+.nav-bar {
   width: 100%;
-  height: 60px; }
+  max-width: 1500px;
+  margin: auto auto;
+  height: auto; }
   .nav-bar .nav-left-group {
     float: left;
     margin: 0px 0px 0px 20px; }
@@ -115,10 +121,10 @@ h3 {
     /* border-top: solid lightgreen 2px; */
     border-radius: 0px 0px 0px 12px;
     /* top-left | top-right | bottom-right | bottom-left */ }
-  @media screen and (min-width: 761px) and (max-width: 5000px) {
+  @media screen and (min-width: 981px) and (max-width: 5000px) {
     .nav-bar .menu-sm {
       display: none; } }
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 980px) {
     .nav-bar .menu-lg {
       display: none; }
     .nav-bar .menu-sm {
@@ -148,14 +154,14 @@ h3 {
 @media screen and (min-width: 1490px) and (max-width: 1680px) {
   div.about-container {
     background-position: -128px top; } }
-@media screen and (min-width: 761px) and (max-width: 1489px) {
+@media screen and (min-width: 980px) and (max-width: 1489px) {
   div.about-container {
     background-position: 51% top; } }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 980px) {
   div.about-container {
-    padding-top: 140px;
-    height: 400px;
-    background-position: 80% top; }
+    padding-top: 240px;
+    height: 500px;
+    background-position: 70% top; }
 
   .about-bar {
     margin: 0px auto 0px auto; } }
@@ -223,17 +229,25 @@ h3 {
   padding-top: 30px;
   padding-bottom: 80px; }
 
+@media screen and (min-width: 1px) and (max-width: 980px) {
+  div.grid {
+    width: 750px;
+    height: 750px;
+    -ms-grid-columns: 250px 250px 250px;
+    -ms-grid-rows: 250px 250px 250px;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px 250px 250px; } }
 .grid {
   overflow: hidden;
   margin: 0px auto 0px auto;
   width: 900px;
-  height: auto;
+  height: 900px;
   display: grid;
   display: -ms-grid;
   -ms-grid-columns: 300px 300px 300px;
   -ms-grid-rows: 300px 300px 300px;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 300px 300px 300px; }
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(3, 300px); }
 
 .grid-item {
   border-radius: 10px;
@@ -328,14 +342,51 @@ h3 {
 .p-minesweeper, .p-img-minesweeper {
   background-image: url("../images/mine_md.png"); }
 
-.pd {
-  font-family: 'Padauk', sans-serif;
-  width: 100%;
-  height: 500px;
-  min-width: 1000px;
+@media screen and (min-width: 1501px) and (max-width: 5000px) {
+  .pd {
+    width: 1500px;
+    margin: auto auto; } }
+@media screen and (min-width: 1061px) and (max-width: 1200px) {
+  div.pd-contain {
+    height: 500px; }
+    div.pd-contain .pd {
+      padding: 0; } }
+@media screen and (min-width: 1px) and (max-width: 1060px) {
+  div.pd-contain {
+    height: 400px;
+    width: 100%;
+    min-width: 800px; }
+    div.pd-contain div.pd {
+      padding: 0;
+      margin: 0px 0px 0px 0px;
+      height: 400px;
+      width: 100%; }
+
+  div.detail-left, div.detail-right {
+    height: 400px;
+    width: 400px; }
+
+  div.vert-contain {
+    margin: 60px 0px 0px 0px;
+    height: 400px;
+    width: 400px; }
+
+  div.detail-img {
+    height: 100%;
+    width: 100%; }
+
+  div.proj-detail-title {
+    font-size: 28px; } }
+.pd-contain {
+  max-width: 100%;
+  height: 550px;
   outline-color: #94b0be;
   outline-width: 2px;
   outline-style: solid; }
+  .pd-contain .pd {
+    font-family: 'Padauk', sans-serif;
+    height: 500px;
+    padding-top: 25px; }
 
 .detail-left > hr, .detail-right > hr {
   margin-top: 12px;
@@ -345,18 +396,18 @@ h3 {
   width: 500px;
   height: 100%; }
 
-.detail-img {
-  height: 100%;
-  width: 100%;
-  background-size: contain;
-  background-position: center; }
-
 .detail-right {
   width: 500px;
   height: 100%; }
 
 .detail-left, .detail-right {
   text-align: center; }
+
+.detail-img {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-position: center; }
 
 .floatl {
   float: left; }

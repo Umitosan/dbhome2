@@ -16,36 +16,38 @@
 
     <div class="scrollable" id="scroll-top"></div>
 
-    <div class="nav-bar">
-      <div class="nav-left-group nav-item-item scrollable" href="#scroll-top">
-        <canvas id="canvas-logo2" width="60" height="70"></canvas>
-      </div>
-      <div class="nav-right-group">
-        <div class="nav-right-item menu-lg"><div class="nav-text scrollable" href="#scroll-about">ABOUT</div></div>
-        <div class="nav-right-item menu-lg"><div class="nav-text scrollable" href="#projects-grid">PROJECTS</div></div>
-        <div class="nav-right-item menu-lg"><div class="nav-text scrollable" href="#scroll-contact">CONTACT</div></div>
-        <div class="nav-right-item menu-sm">
-          <div class="menu-bar" id="menu-bar-top"></div>
-          <div class="menu-bar"></div>
-          <div class="menu-bar"></div>
-          <div class="proj-list-menu">
-            <div class="menu-item scrollable" href="#scroll-about">about</div>
-            <div class="hr-sm"></div>
-            <div class="menu-item scrollable" href="#uforegon">UFOregon</div>
-            <div class="menu-item scrollable" href="#gameoflife">Game of Life</div>
-            <div class="menu-item scrollable" href="#spacejunk">Space Junk</div>
-            <div class="menu-item scrollable" href="#qwertysquest">Qwertys Quest</div>
-            <div class="menu-item scrollable" href="#pacman">Pac Man</div>
-            <div class="menu-item scrollable" href="#animtests">Animation Tests</div>
-            <div class="menu-item scrollable" href="#minesweeper">Minesweeper</div>
-            <div class="menu-item scrollable" href="#lilrogue">Lil Rogue</div>
-            <div class="menu-item scrollable" href="#sorting">Sorting</div>
-            <div class="hr-sm"></div>
-            <div class="menu-item scrollable" href="#scroll-contact">contact</div>
+    <div class="nav-bar-contain">
+        <div class="nav-bar">
+          <div class="nav-left-group nav-item-item scrollable" href="#scroll-top">
+            <canvas id="canvas-logo2" width="60" height="70"></canvas>
+          </div>
+          <div class="nav-right-group">
+            <div class="nav-right-item menu-lg"><div class="nav-text scrollable" href="#scroll-about">ABOUT</div></div>
+            <div class="nav-right-item menu-lg"><div class="nav-text scrollable" href="#projects-grid">PROJECTS</div></div>
+            <div class="nav-right-item menu-lg"><div class="nav-text scrollable" href="#scroll-contact">CONTACT</div></div>
+            <div class="nav-right-item menu-sm">
+              <div class="menu-bar" id="menu-bar-top"></div>
+              <div class="menu-bar"></div>
+              <div class="menu-bar"></div>
+              <div class="proj-list-menu">
+                <div class="menu-item scrollable" href="#scroll-about">about</div>
+                <div class="hr-sm"></div>
+                <div class="menu-item scrollable" href="#uforegon">UFOregon</div>
+                <div class="menu-item scrollable" href="#gameoflife">Game of Life</div>
+                <div class="menu-item scrollable" href="#spacejunk">Space Junk</div>
+                <div class="menu-item scrollable" href="#qwertysquest">Qwertys Quest</div>
+                <div class="menu-item scrollable" href="#pacman">Pac Man</div>
+                <div class="menu-item scrollable" href="#animtests">Animation Tests</div>
+                <div class="menu-item scrollable" href="#minesweeper">Minesweeper</div>
+                <div class="menu-item scrollable" href="#lilrogue">Lil Rogue</div>
+                <div class="menu-item scrollable" href="#sorting">Sorting</div>
+                <div class="hr-sm"></div>
+                <div class="menu-item scrollable" href="#scroll-contact">contact</div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+    </div> <!-- nav-bar-contain -->
 
     <div class="about-container scrollable" id="scroll-about">
       <div class="about-bar">
@@ -121,270 +123,288 @@
 
     <div class="projects-list">
 
-      <div class="pd bg-grad-1" id="uforegon">
-        <div class="detail-left floatl">
-          <div class="p-img-uforegon detail-img"></div>
-        </div>
-        <div class="detail-right floatl">
-          <div class="vert-contain">
-            <div class="proj-detail-title">UFOregon</div>
-            <hr class="hr-sm-green"></hr>
-            <div class="tech-list">
-              <div class="tl-title"> Technologies </div>
-              <div class="tl-items">
-                <div>Ruby</div>
-                <div>Google Maps API</div>
-                <div>Sinatra</div>
-                <div>html, css, jquery</div>
-              </div>
-            </div>
-            <hr class="hr-sm-green"></hr>
-            <div class="btns-contain">
-              <div class="btn-link">
-                <div class='lk' href="https://uforegon.herokuapp.com/">view live</div>
-              </div>
-              <div class="btn-link">
-                <div class='lk' href="https://github.com/Umitosan/UFOregon">view repo</div>
-              </div>
-            </div>
+      <div class="pd-contain bg-grad-1">
+        <div class="pd" id="uforegon">
+          <div class="detail-left floatl">
+            <div class="p-img-uforegon detail-img"></div>
           </div>
-        </div>
-      </div> <!-- pd -->
-
-      <div class="pd bg-grad-2" id="gameoflife">
-        <div class="detail-left floatr">
-          <div class="p-img-gameoflife detail-img"></div>
-        </div>
-        <div class="detail-right floatr">
-          <div class="vert-contain">
-            <div class="proj-detail-title">Conway's Game of Life</div>
-            <hr class="hr-sm-green"></hr>
-            <div class="tech-list">
-              <div class="tl-title"> Technologies </div>
-              <div class="tl-items">
-                <div>HTML5's Canvas API</div>
-                <div>CSS</div>
-                <div>jQuery</div>
-              </div>
-            </div>
-            <hr class="hr-sm-green"></hr>
-            <div class="btns-contain">
-              <div class="btn-link">
-                <div class='lk' href="http://www.gameoflife.dombrown.net/">view live</div>
-              </div>
-              <div class="btn-link">
-                <div class='lk' href="https://github.com/Umitosan/game_of_life">view repo</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- pd -->
-
-      <div class="pd bg-grad-1" id="spacejunk">
-        <div class="detail-left floatl">
-          <div class="p-img-spacejunk detail-img"></div>
-        </div>
-        <div class="detail-right floatl">
-          <div class="vert-contain">
-            <div class="proj-detail-title">Space Junk</div>
-            <hr class="hr-sm-green"></hr>
-            <div class="tech-list">
-              <div class="tl-title"> Technologies </div>
-              <div class="tl-items">
-                <div>Angular</div>
-                <div>Firebase</div>
-                <div>D3 lib</div>
-                <div>html, css, jquery</div>
-              </div>
-            </div>
-            <hr class="hr-sm-green"></hr>
-            <div class="btns-contain">
-              <div class="btn-link">
-                <div class='lk' href="http://www.spacejunk.dombrown.net/">view live</div>
-              </div>
-              <div class="btn-link">
-                <div class='lk' href="https://github.com/Umitosan/space-junk">view repo</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- pd -->
-
-      <div class="pd bg-grad-2" id="qwertysquest">
-        <div class="detail-left floatr">
-          <div class="p-img-qwertysquest detail-img"></div>
-        </div>
-        <div class="detail-right floatr">
-          <div class="vert-contain">
-            <div class="proj-detail-title">Qwerty's Quest</div>
-            <hr class="hr-sm-green"></hr>
-            <div class="tech-list">
-              <div class="tl-title"> Technologies </div>
-              <div class="tl-items">
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>jQuery</div>
-              </div>
-            </div>
-            <hr class="hr-sm-green"></hr>
-            <div class="btns-contain">
-              <div class="btn-link">
-                <div class='lk' href="http://www.qwertysquest.dombrown.net/">view live</div>
-              </div>
-              <div class="btn-link">
-                <div class='lk' href="https://github.com/Umitosan/Qwertys-Quest">view repo</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- pd -->
-
-      <div class="pd bg-grad-1" id="pacman">
-        <div class="detail-left floatl">
-          <div class="p-img-pacman detail-img"></div>
-        </div>
-        <div class="detail-right floatl">
+          <div class="detail-right floatl">
             <div class="vert-contain">
-            <div class="proj-detail-title">Pac Man</div>
-            <hr class="hr-sm-green"></hr>
-            <div class="tech-list">
-              <div class="tl-title"> Technologies
+              <div class="proj-detail-title">UFOregon</div>
+              <hr class="hr-sm-green"></hr>
+              <div class="tech-list">
+                <div class="tl-title"> Technologies </div>
+                <div class="tl-items">
+                  <div>Ruby</div>
+                  <div>Google Maps API</div>
+                  <div>Sinatra</div>
+                  <div>html, css, jquery</div>
+                </div>
               </div>
-              <div class="tl-items">
-                <div>HTML5's Canvas API</div>
-                <div>CSS</div>
-                <div>jQuery</div>
-              </div>
-            </div>
-            <hr class="hr-sm-green"></hr>
-            <div class="btns-contain">
-              <div class="btn-link">
-                <div class='lk' href="http://pacman.dombrown.net/">view live</div>
-              </div>
-              <div class="btn-link">
-                <div class='lk' href="https://github.com/Umitosan/pac-man">view repo</div>
+              <hr class="hr-sm-green"></hr>
+              <div class="btns-contain">
+                <div class="btn-link">
+                  <div class='lk' href="https://uforegon.herokuapp.com/">view live</div>
+                </div>
+                <div class="btn-link">
+                  <div class='lk' href="https://github.com/Umitosan/UFOregon">view repo</div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div> <!-- pd -->
+        </div> <!-- pd -->
+      </div>
 
-      <div class="pd bg-grad-2" id="animtests">
-        <div class="detail-left floatr">
-          <div class="p-img-animtests detail-img"></div>
-        </div>
-        <div class="detail-right floatr">
+      <div class="pd-contain bg-grad-2">
+        <div class="pd" id="gameoflife">
+          <div class="detail-left floatr">
+            <div class="p-img-gameoflife detail-img"></div>
+          </div>
+          <div class="detail-right floatr">
             <div class="vert-contain">
-            <div class="proj-detail-title">Animation tests</div>
-            <hr class="hr-sm-green"></hr>
-            <div class="tech-list">
-              <div class="tl-title"> Technologies </div>
-              <div class="tl-items">
-                <div>HTML5's Canvas API</div>
-                <div>CSS</div>
-                <div>jQuery</div>
+              <div class="proj-detail-title">Conway's Game of Life</div>
+              <hr class="hr-sm-green"></hr>
+              <div class="tech-list">
+                <div class="tl-title"> Technologies </div>
+                <div class="tl-items">
+                  <div>HTML5's Canvas API</div>
+                  <div>CSS</div>
+                  <div>jQuery</div>
+                </div>
               </div>
-            </div>
-            <hr class="hr-sm-green"></hr>
-            <div class="btns-contain">
-              <div class="btn-link">
-                <div class='lk' href="http://anim.dombrown.net">view live</div>
-              </div>
-              <div class="btn-link">
-                <div class='lk' href="https://github.com/Umitosan/animation-test-canvas">view repo</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- pd -->
-
-      <div class="pd bg-grad-1" id="minesweeper">
-        <div class="detail-left floatl">
-          <div class="p-img-minesweeper detail-img"></div>
-        </div>
-        <div class="detail-right floatl">
-          <div class="vert-contain">
-            <div class="proj-detail-title">Minesweeper</div>
-            <hr class="hr-sm-green"></hr>
-            <div class="tech-list">
-              <div class="tl-title"> Technologies </div>
-              <div class="tl-items">
-                <div>Angular</div>
-                <div>Firebase</div>
-                <div>HTML, CSS, jQuerry</div>
-              </div>
-            </div>
-            <hr class="hr-sm-green"></hr>
-            <div class="btns-contain">
-              <div class="btn-link">
-                <div class='lk' href="http://www.minesweeper.dombrown.net/">view live</div>
-              </div>
-              <div class="btn-link">
-                <div class='lk' href="https://github.com/Umitosan/minesweeper">view repo</div>
+              <hr class="hr-sm-green"></hr>
+              <div class="btns-contain">
+                <div class="btn-link">
+                  <div class='lk' href="http://www.gameoflife.dombrown.net/">view live</div>
+                </div>
+                <div class="btn-link">
+                  <div class='lk' href="https://github.com/Umitosan/game_of_life">view repo</div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div> <!-- pd -->
+        </div> <!-- pd -->
+      </div>
 
-      <div class="pd bg-grad-2" id="lilrogue">
-        <div class="detail-left floatr">
-          <div class="p-img-lilrogue detail-img"></div>
-        </div>
-        <div class="detail-right floatr">
+      <div class="pd-contain bg-grad-1">
+        <div class="pd" id="spacejunk">
+          <div class="detail-left floatl">
+            <div class="p-img-spacejunk detail-img"></div>
+          </div>
+          <div class="detail-right floatl">
             <div class="vert-contain">
-            <div class="proj-detail-title">Lil Rogue</div>
-            <hr class="hr-sm-green"></hr>
-            <div class="tech-list">
-              <div class="tl-title"> Technologies
+              <div class="proj-detail-title">Space Junk</div>
+              <hr class="hr-sm-green"></hr>
+              <div class="tech-list">
+                <div class="tl-title"> Technologies </div>
+                <div class="tl-items">
+                  <div>Angular</div>
+                  <div>Firebase</div>
+                  <div>D3 lib</div>
+                  <div>html, css, jquery</div>
+                </div>
               </div>
-              <div class="tl-items">
-                <div>Ruby</div>
-                <div>Gosu (graphics library)</div>
-              </div>
-            </div>
-            <hr class="hr-sm-green"></hr>
-            <div class="btns-contain">
-              <div class="btn-link gif-link">
-                <div class='lk' href="images/lil_rogue1.gif" val="lilrogue">view gif</div>
-              </div>
-              <div class="btn-link">
-                <div class='lk' href="https://github.com/Umitosan/lil_rogue">view repo</div>
+              <hr class="hr-sm-green"></hr>
+              <div class="btns-contain">
+                <div class="btn-link">
+                  <div class='lk' href="http://www.spacejunk.dombrown.net/">view live</div>
+                </div>
+                <div class="btn-link">
+                  <div class='lk' href="https://github.com/Umitosan/space-junk">view repo</div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div> <!-- pd -->
+        </div> <!-- pd -->
+      </div>
 
-      <div class="pd bg-grad-1" id="sorting">
-        <div class="detail-left floatl">
-          <div class="p-img-sorting detail-img"></div>
-        </div>
-        <div class="detail-right floatl">
+      <div class="pd-contain bg-grad-2">
+        <div class="pd" id="qwertysquest">
+          <div class="detail-left floatr">
+            <div class="p-img-qwertysquest detail-img"></div>
+          </div>
+          <div class="detail-right floatr">
             <div class="vert-contain">
-            <div class="proj-detail-title">Sorting Animation</div>
-            <hr class="hr-sm-green"></hr>
-            <div class="tech-list">
-              <div class="tl-title"> Technologies
+              <div class="proj-detail-title">Qwerty's Quest</div>
+              <hr class="hr-sm-green"></hr>
+              <div class="tech-list">
+                <div class="tl-title"> Technologies </div>
+                <div class="tl-items">
+                  <div>HTML</div>
+                  <div>CSS</div>
+                  <div>jQuery</div>
+                </div>
               </div>
-              <div class="tl-items">
-                <div>HTML5's Canvas API</div>
-                <div>CSS</div>
-                <div>jQuery</div>
-              </div>
-            </div>
-            <hr class="hr-sm-green"></hr>
-            <div class="btns-contain">
-              <div class="btn-link">
-                <div class='lk' href="http://sort.dombrown.net/">view live</div>
-              </div>
-              <div class="btn-link">
-                <div class='lk' href="https://github.com/Umitosan/sorting-canvas">view repo</div>
+              <hr class="hr-sm-green"></hr>
+              <div class="btns-contain">
+                <div class="btn-link">
+                  <div class='lk' href="http://www.qwertysquest.dombrown.net/">view live</div>
+                </div>
+                <div class="btn-link">
+                  <div class='lk' href="https://github.com/Umitosan/Qwertys-Quest">view repo</div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div> <!-- pd -->
+        </div> <!-- pd -->
+      </div>
+
+      <div class="pd-contain bg-grad-1">
+        <div class="pd" id="pacman">
+          <div class="detail-left floatl">
+            <div class="p-img-pacman detail-img"></div>
+          </div>
+          <div class="detail-right floatl">
+              <div class="vert-contain">
+              <div class="proj-detail-title">Pac Man</div>
+              <hr class="hr-sm-green"></hr>
+              <div class="tech-list">
+                <div class="tl-title"> Technologies
+                </div>
+                <div class="tl-items">
+                  <div>HTML5's Canvas API</div>
+                  <div>CSS</div>
+                  <div>jQuery</div>
+                </div>
+              </div>
+              <hr class="hr-sm-green"></hr>
+              <div class="btns-contain">
+                <div class="btn-link">
+                  <div class='lk' href="http://pacman.dombrown.net/">view live</div>
+                </div>
+                <div class="btn-link">
+                  <div class='lk' href="https://github.com/Umitosan/pac-man">view repo</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- pd -->
+      </div>
+
+      <div class="pd-contain bg-grad-2">
+        <div class="pd" id="animtests">
+          <div class="detail-left floatr">
+            <div class="p-img-animtests detail-img"></div>
+          </div>
+          <div class="detail-right floatr">
+              <div class="vert-contain">
+              <div class="proj-detail-title">Animation tests</div>
+              <hr class="hr-sm-green"></hr>
+              <div class="tech-list">
+                <div class="tl-title"> Technologies </div>
+                <div class="tl-items">
+                  <div>HTML5's Canvas API</div>
+                  <div>CSS</div>
+                  <div>jQuery</div>
+                </div>
+              </div>
+              <hr class="hr-sm-green"></hr>
+              <div class="btns-contain">
+                <div class="btn-link">
+                  <div class='lk' href="http://anim.dombrown.net">view live</div>
+                </div>
+                <div class="btn-link">
+                  <div class='lk' href="https://github.com/Umitosan/animation-test-canvas">view repo</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- pd -->
+      </div>
+
+      <div class="pd-contain bg-grad-1">
+        <div class="pd" id="minesweeper">
+          <div class="detail-left floatl">
+            <div class="p-img-minesweeper detail-img"></div>
+          </div>
+          <div class="detail-right floatl">
+            <div class="vert-contain">
+              <div class="proj-detail-title">Minesweeper</div>
+              <hr class="hr-sm-green"></hr>
+              <div class="tech-list">
+                <div class="tl-title"> Technologies </div>
+                <div class="tl-items">
+                  <div>Angular</div>
+                  <div>Firebase</div>
+                  <div>HTML, CSS, jQuerry</div>
+                </div>
+              </div>
+              <hr class="hr-sm-green"></hr>
+              <div class="btns-contain">
+                <div class="btn-link">
+                  <div class='lk' href="http://www.minesweeper.dombrown.net/">view live</div>
+                </div>
+                <div class="btn-link">
+                  <div class='lk' href="https://github.com/Umitosan/minesweeper">view repo</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- pd -->
+      </div>
+
+      <div class="pd-contain bg-grad-2">
+        <div class="pd" id="lilrogue">
+          <div class="detail-left floatr">
+            <div class="p-img-lilrogue detail-img"></div>
+          </div>
+          <div class="detail-right floatr">
+              <div class="vert-contain">
+              <div class="proj-detail-title">Lil Rogue</div>
+              <hr class="hr-sm-green"></hr>
+              <div class="tech-list">
+                <div class="tl-title"> Technologies
+                </div>
+                <div class="tl-items">
+                  <div>Ruby</div>
+                  <div>Gosu (graphics library)</div>
+                </div>
+              </div>
+              <hr class="hr-sm-green"></hr>
+              <div class="btns-contain">
+                <div class="btn-link gif-link">
+                  <div class='lk' href="images/lil_rogue1.gif" val="lilrogue">view gif</div>
+                </div>
+                <div class="btn-link">
+                  <div class='lk' href="https://github.com/Umitosan/lil_rogue">view repo</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- pd -->
+      </div>
+
+      <div class="pd-contain bg-grad-1">
+        <div class="pd" id="sorting">
+          <div class="detail-left floatl">
+            <div class="p-img-sorting detail-img"></div>
+          </div>
+          <div class="detail-right floatl">
+              <div class="vert-contain">
+              <div class="proj-detail-title">Sorting Animation</div>
+              <hr class="hr-sm-green"></hr>
+              <div class="tech-list">
+                <div class="tl-title"> Technologies
+                </div>
+                <div class="tl-items">
+                  <div>HTML5's Canvas API</div>
+                  <div>CSS</div>
+                  <div>jQuery</div>
+                </div>
+              </div>
+              <hr class="hr-sm-green"></hr>
+              <div class="btns-contain">
+                <div class="btn-link">
+                  <div class='lk' href="http://sort.dombrown.net/">view live</div>
+                </div>
+                <div class="btn-link">
+                  <div class='lk' href="https://github.com/Umitosan/sorting-canvas">view repo</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- pd -->
+      </div>
 
     </div> <!-- project contain -->
 
