@@ -5,6 +5,9 @@
 # output
 /dist
 
+# dev
+/.sass-cache
+
 # misc
 .DS_Store
 thumbs.db
